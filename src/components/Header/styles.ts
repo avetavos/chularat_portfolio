@@ -75,7 +75,7 @@ export const MenuItem = styled.li`
     justify-center
     items-center
   `};
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   &.active {
     font-weight: 700;
   }
@@ -120,7 +120,7 @@ export const MobileMenuWindow = styled.div<IMobileMenuWindow>`
   top: 0;
   left: -100%;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: 100%;
@@ -141,11 +141,16 @@ export const MobileContainer = styled.div`
   `}
 `;
 
+interface IMobileItem {
+  isIcon?: boolean;
+}
+
 export const MobileItem = styled.div`
   ${tw`
     flex
     justify-center
   `}
+  ${({ isIcon }: IMobileItem) => isIcon && tw`gap-4`}
 `;
 
 export const HandleBrawerBtn = styled.button`
@@ -159,13 +164,13 @@ export const HandleBrawerBtn = styled.button`
 
 export const MobileMenu = styled.ul`
   ${tw`
-    pt-16
+    pt-10
     flex
     flex-col
     items-center
     justify-center
     text-center
-    mt-10
+    mt-3
     p-0
   `}
 `;

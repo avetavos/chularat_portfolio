@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Navbar,
   Item,
@@ -32,6 +32,14 @@ export const Header = () => {
     setIsDrawerOpen(false)
     navigate(path)
   }
+
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isDrawerOpen])
 
   return (
     <>
@@ -92,7 +100,7 @@ export const Header = () => {
               </MobileMenuItem>
             </MobileMenu>
           </MobileItem>
-          <MobileItem style={{paddingTop: '4rem'}}>
+          <MobileItem style={{paddingTop: '4rem'}} isIcon={true}>
             <MenuIcon icon={faEnvelope} size="xl" />
             <MenuIcon icon={faLinkedin} size="xl" />
           </MobileItem>
