@@ -4,7 +4,6 @@ import {
   Item,
   Menu,
   MenuItem,
-  MenuLink,
   ActiveDot,
   Logo,
   MenuIcon,
@@ -15,22 +14,16 @@ import {
   MobileItem,
   MobileMenu,
 } from './styles';
-import { useMatch, useNavigate } from 'react-router-dom';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '../../assets/avatar.png';
 
 export const Header = () => {
-  const isAboutMatch = useMatch('/about');
-  const isWorkMatch = useMatch('/work');
-  const isResumeMatch = useMatch('/resume');
-  const isContactMatch = useMatch('/contact');
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const navigate = useNavigate()
 
   const handleNavigate = (path: string) => {
     setIsDrawerOpen(false)
-    navigate(path)
+    window.location.href = `#${path}`;
   }
 
   useEffect(() => {
@@ -49,21 +42,17 @@ export const Header = () => {
         </Item>
         <Item isOnlyDesktop={true}>
           <Menu>
-            <MenuItem className={isAboutMatch ? 'active' : ''} onClick={() => handleNavigate('about')}>
+            <MenuItem onClick={() => handleNavigate('about')}>
               About
-              {isAboutMatch && <ActiveDot />}
             </MenuItem>
-            <MenuItem className={isResumeMatch ? 'active' : ''} onClick={() => handleNavigate('resume')}>
+            <MenuItem onClick={() => handleNavigate('work-experience-section')}>
               Resume
-              {isResumeMatch && <ActiveDot />}
             </MenuItem>
-            <MenuItem className={isWorkMatch ? 'active' : ''} onClick={() => handleNavigate('work')}>
+            <MenuItem onClick={() => handleNavigate('work')}>
               Works
-              {isWorkMatch && <ActiveDot />}
             </MenuItem>
-            <MenuItem className={isContactMatch ? 'active' : ''} onClick={() => handleNavigate('contact')}>
+            <MenuItem onClick={() => handleNavigate('contact')}>
               Contact
-              {isContactMatch && <ActiveDot />}
             </MenuItem>
           </Menu>
         </Item>
@@ -86,16 +75,16 @@ export const Header = () => {
         <MobileContainer>
           <MobileItem>
             <MobileMenu>
-              <MobileMenuItem className={isAboutMatch ? 'active' : ''} onClick={() => handleNavigate('about')}>
+              <MobileMenuItem onClick={() => handleNavigate('about')}>
                 About
               </MobileMenuItem>
-              <MobileMenuItem className={isResumeMatch ? 'active' : ''} onClick={() => handleNavigate('resume')}>
+              <MobileMenuItem onClick={() => handleNavigate('resume')}>
                 Resume
               </MobileMenuItem>
-              <MobileMenuItem className={isWorkMatch ? 'active' : ''} onClick={() => handleNavigate('work')}>
+              <MobileMenuItem onClick={() => handleNavigate('work')}>
                 Works
               </MobileMenuItem>
-              <MobileMenuItem className={isContactMatch ? 'active' : ''} onClick={() => handleNavigate('contact')}>
+              <MobileMenuItem onClick={() => handleNavigate('contact')}>
                 Contact
               </MobileMenuItem>
             </MobileMenu>

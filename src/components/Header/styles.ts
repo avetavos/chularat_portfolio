@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -81,7 +80,7 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled.a`
   ${tw`
     text-black
   `}
@@ -118,7 +117,7 @@ export const MobileMenuWindow = styled.div<IMobileMenuWindow>`
     flex-col
   `}
   top: 0;
-  left: -100%;
+  left: -105%;
   width: 100vw;
   height: 100%;
   background-image: url(${bg});

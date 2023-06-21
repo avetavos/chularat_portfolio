@@ -1,28 +1,12 @@
-import React, { useEffect } from 'react';
-import {
-  Route,
-  Routes,
-  useNavigate ,
-} from "react-router-dom";
+import React from 'react';
 import { Header } from './components';
-import { About, Contact, Resume, Work } from './pages';
+import { About } from './pages';
 
 function App() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    navigate('/about')
-  }, []);
-
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <About />
     </>
   );
 }
