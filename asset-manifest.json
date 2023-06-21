@@ -1,19 +1,20 @@
 {
-  "files": {
-    "main.css": "/static/css/main.4cacb5fe.css",
-    "main.js": "/static/js/main.67e4f6bb.js",
-    "static/js/787.e46638dc.chunk.js": "/static/js/787.e46638dc.chunk.js",
-    "static/media/about-bg.png": "/static/media/about-bg.882221578a059ee73941.png",
-    "static/media/avatar.png": "/static/media/avatar.dd735c5065d5c65e87a3.png",
-    "static/media/profile.jpg": "/static/media/profile.d758229a6863e2c8a21d.jpg",
-    "static/media/footer-mobile.png": "/static/media/footer-mobile.208991fdf248cf6feea7.png",
-    "index.html": "/index.html",
-    "main.4cacb5fe.css.map": "/static/css/main.4cacb5fe.css.map",
-    "main.67e4f6bb.js.map": "/static/js/main.67e4f6bb.js.map",
-    "787.e46638dc.chunk.js.map": "/static/js/787.e46638dc.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.4cacb5fe.css",
-    "static/js/main.67e4f6bb.js"
-  ]
+  "main.css": "/static/css/main.363ec741.chunk.css",
+  "main.js": "/static/js/main.33e4efdd.chunk.js",
+  "main.js.map": "/static/js/main.33e4efdd.chunk.js.map",
+  "static/js/1.c0dba26f.chunk.js": "/static/js/1.c0dba26f.chunk.js",
+  "static/js/1.c0dba26f.chunk.js.map": "/static/js/1.c0dba26f.chunk.js.map",
+  "static/js/2.d0691d96.chunk.js": "/static/js/2.d0691d96.chunk.js",
+  "static/js/2.d0691d96.chunk.js.map": "/static/js/2.d0691d96.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.561708c8.js",
+  "runtime~main.js.map": "/static/js/runtime~main.561708c8.js.map",
+  "static/media/project-thumbnail.jpg": "/static/media/project-thumbnail.125f3e1b.jpg",
+  "static/media/avatar.png": "/static/media/avatar.b3f54039.png",
+  "static/media/footer-mobile.png": "/static/media/footer-mobile.c33dfdb7.png",
+  "static/media/about-bg.png": "/static/media/about-bg.0eec129e.png",
+  "static/media/profile.jpg": "/static/media/profile.b4b7dcb3.jpg",
+  "static/css/main.363ec741.chunk.css.map": "/static/css/main.363ec741.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.9f327fa942a2d93e2080d8c8450765d0.js": "/precache-manifest.9f327fa942a2d93e2080d8c8450765d0.js",
+  "service-worker.js": "/service-worker.js"
 }
