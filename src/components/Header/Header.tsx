@@ -13,9 +13,10 @@ import {
   MobileContainer,
   MobileItem,
   MobileMenu,
+  MenuLink,
 } from './styles';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBars, faXmark, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '../../assets/avatar.png';
 
 export const Header = () => {
@@ -33,6 +34,20 @@ export const Header = () => {
       document.body.style.overflow = 'auto';
     }
   }, [isDrawerOpen])
+
+  const contractLink = (
+    <>
+      <MenuLink href='mailto:tivuttitachularat@gmail.com'>
+        <MenuIcon icon={faEnvelope} size="xl" />
+      </MenuLink>
+      <MenuLink href='https://www.linkedin.com/' target='_blank'>
+        <MenuIcon icon={faLinkedin} size="xl" />
+      </MenuLink>
+      <MenuLink href='tel:+66957192045'>
+        <MenuIcon icon={faPhone} size="lg" />
+      </MenuLink>
+    </>
+  )
 
   return (
     <>
@@ -57,8 +72,7 @@ export const Header = () => {
           </Menu>
         </Item>
         <Item isOnlyDesktop={true}>
-          <MenuIcon icon={faEnvelope} size="xl" />
-          <MenuIcon icon={faLinkedin} size="xl" />
+          {contractLink}
         </Item>
         <Item isOnlyMobile={true}>
           <HandleBrawerBtn
@@ -90,8 +104,7 @@ export const Header = () => {
             </MobileMenu>
           </MobileItem>
           <MobileItem style={{paddingTop: '4rem'}} isIcon={true}>
-            <MenuIcon icon={faEnvelope} size="xl" />
-            <MenuIcon icon={faLinkedin} size="xl" />
+            {contractLink}
           </MobileItem>
           <MobileItem style={{paddingTop: '4rem'}}>
             <HandleBrawerBtn
