@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import bg from '../../assets/about-bg.png';
 
 interface IProjectListContainer {
-  isLoadMore?: boolean;
+  sizing: number;
 }
 
 export const ProjectListContainer = styled.div<IProjectListContainer>`
@@ -27,7 +27,7 @@ export const ProjectListContainer = styled.div<IProjectListContainer>`
   `}
   background-repeat: no-repeat;
   background-image: url(${bg});
-  ${({ isLoadMore }) => isLoadMore ? css`background-size: 6000px;` : css`background-size: 3000px;`}
+  ${({ sizing }) => css`background-size: ${sizing * 300}px;`}
   background-position: center;
   background-origin: content-box;
   background-clip: padding-box;

@@ -223,7 +223,6 @@ const projectList: Record<string, any[]> = {
 export const ProjectList = () => {
   const [maxDesktopItems, setMaxDesktopItems] = React.useState(6);
   const [selectedTab, setSelectedTab] = React.useState('uxui');
-  const [isLoadMore, setIsLoadMore] = React.useState(false);
   const [projectCount, setProjectCount] = React.useState({
     uxui: 0,
     design: 0,
@@ -279,7 +278,6 @@ export const ProjectList = () => {
   );
 
   const onLoadMoreHandler = () => {
-    setIsLoadMore(true);
     setMaxDesktopItems(projectList[selectedTab].length)
   }
 
@@ -289,7 +287,7 @@ export const ProjectList = () => {
   };
 
   return (
-    <ProjectListContainer id='portfolio-section' isLoadMore={isLoadMore}>
+    <ProjectListContainer id='portfolio-section' sizing={projectList[selectedTab].length}>
       <div>
         <PortFolioTitle>Latest Work</PortFolioTitle>
       </div>
