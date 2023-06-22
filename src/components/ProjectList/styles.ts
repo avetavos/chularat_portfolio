@@ -1,8 +1,12 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
-import aboutBg from '../../assets/about-bg.png';
+import bg from '../../assets/about-bg.png';
 
-export const ProjectListContainer = styled.div`
+interface IProjectListContainer {
+  isLoadMore?: boolean;
+}
+
+export const ProjectListContainer = styled.div<IProjectListContainer>`
   ${tw`
     flex
     h-full
@@ -22,19 +26,20 @@ export const ProjectListContainer = styled.div`
     md:mt-0
   `}
   background-repeat: no-repeat;
-  background-size: 450px;
-  background-position: 0rem 0rem;
+  background-image: url(${bg});
+  ${({ isLoadMore }) => isLoadMore ? css`background-size: 6000px;` : css`background-size: 3000px;`}
+  background-position: center;
+  background-origin: content-box;
+  background-clip: padding-box;
+  background-color: transparent;
   @media (min-width: 768px) {
-    background-size: 380px;
-    background-position: 27.5rem 4.5rem;
+    background-size: 800px;
   }
   @media (min-width: 1024px) {
-    background-size: 450px;
-    background-position: 41rem 5rem;
+    background-size: 800px;
   }
   @media (min-width: 1280px) {
-    background-size: 500px;
-    background-position: 48rem 8rem;
+    background-size: 1000px;
   }
 `;
 
@@ -94,7 +99,7 @@ export const Tab = styled.li`
     justify-center
     w-full
     h-full
-    my-5
+    md:my-5
     text-sm
     text-black
     hover:font-bold
@@ -103,6 +108,33 @@ export const Tab = styled.li`
 `}
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  &:nth-child(1) {
+    ${tw`
+      mt-5
+    `}
+  }
+  &:nth-child(2) {
+    ${tw`
+      mt-5
+    `}
+  }
+  &:nth-child(3) {
+    ${tw`
+      mt-5
+    `}
+  }
+  &:nth-child(4) {
+    ${tw`
+      mt-3
+      mb-5
+    `}
+  }
+  &:nth-child(5) {
+    ${tw`
+      mt-3
+      mb-5
+    `}
+  }
   &.active {
     font-weight: 700;
   }
@@ -128,7 +160,7 @@ export const CardContainer = styled.div<ICardContainer>`
     flex
     flex-row
     flex-wrap
-    items-center
+    items-start
     justify-start 
     my-5
     p-0
@@ -157,6 +189,7 @@ export const Card = styled.div`
     p-5
     cursor-pointer
     basis-full
+    md:[max-width:33%]
     md:[flex-basis:25%]
     lg:[flex-basis:27%]
   `}
@@ -191,17 +224,21 @@ export const ProjectDescription = styled.p`
 export const TagSection = styled.div`
   ${tw`
     flex 
+    flex-wrap
     gap-2
+    mt-3
   `}
 `;
 
 export const ProjectTag = styled.p`
   ${tw`
-    p-2
+    p-1
     text-black
+    m-0
   `}
   font-size: 0.675rem;
-  background-color: #F5F5F5;
+  border-radius: 6px;
+  background-color: #F1F1F1;
   font-weight: 800;
 `;
 

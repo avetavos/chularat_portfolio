@@ -19,7 +19,7 @@ export const WorkExperience = () => {
         <WorkExperienceTitle>Timeline</WorkExperienceTitle>
       </div>
       <div>
-        <WorkExperienceSectionTitle>EXPERIENCE</WorkExperienceSectionTitle>
+        <WorkExperienceSectionTitle>Experience</WorkExperienceSectionTitle>
       </div>
       <TimelineContainer>
         <Timeline>

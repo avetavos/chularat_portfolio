@@ -29,101 +29,87 @@ const projectList: Record<string, any[]> = {
   uxui: [
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'CRM for E-commerce',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['UX Research', 'Information Architecture', 'Interaction Design', 'Visual Design', 'Micro Interaction', 'Prototype', 'User Testing']
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Redesign Point of Sale (POS)',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['Visual Design', 'UX Research', 'Customer Journey', 'User Testing'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Website design full screen and landing page',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['UX Research', 'Visual Design', 'Story Telling', 'Copy Writing', 'Prototype', 'Interaction Design', 'Animation Design', 'User Testing'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'E-mail Onboarding',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Graphic Design'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Honda Web Application',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+        tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Prototype'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Create a Website Mock up',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'The List of Themes Website',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['UX Research', 'Visual Design', 'Story Telling', 'Copy Writing', 'Prototype', 'Customer Journey'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Banner Design',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['Graphic Design', 'UXUI'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Gambol Web Application',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Super Coffee Content and Web Application',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Dna Web Application',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
-      title: 'Project Title',
+      title: 'Happy Pet Application',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['UX Research', 'User Interview', 'Visual Design', 'Design System', 'Customer Journey', 'Wireframe', 'Prototype', 'Site map', 'User Testing'],
     },
   ],
   design: [
@@ -132,7 +118,7 @@ const projectList: Record<string, any[]> = {
       title: 'Project Title',
       description:
         'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Mobile App', 'Website', 'SasS'],
+      tags: ['UX Research', 'User Interview', 'Visual Design', 'Design System', 'Customer Journey'],
     },
     {
       thumbnail: projectThumbnail,
@@ -237,6 +223,7 @@ const projectList: Record<string, any[]> = {
 export const ProjectList = () => {
   const [maxDesktopItems, setMaxDesktopItems] = React.useState(6);
   const [selectedTab, setSelectedTab] = React.useState('uxui');
+  const [isLoadMore, setIsLoadMore] = React.useState(false);
   const [projectCount, setProjectCount] = React.useState({
     uxui: 0,
     design: 0,
@@ -292,6 +279,7 @@ export const ProjectList = () => {
   );
 
   const onLoadMoreHandler = () => {
+    setIsLoadMore(true);
     setMaxDesktopItems(projectList[selectedTab].length)
   }
 
@@ -301,12 +289,12 @@ export const ProjectList = () => {
   };
 
   return (
-    <ProjectListContainer>
+    <ProjectListContainer id='portfolio-section' isLoadMore={isLoadMore}>
       <div>
         <PortFolioTitle>Latest Work</PortFolioTitle>
       </div>
       <div>
-        <SectionTitle>PORTFOLIO</SectionTitle>
+        <SectionTitle>Portfolio</SectionTitle>
       </div>
       <TabContainer>
         <TabList>

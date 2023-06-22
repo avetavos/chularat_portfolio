@@ -25,6 +25,7 @@ export const LandingContainer = styled.div`
   background-repeat: no-repeat;
   background-size: 450px;
   background-position: 0rem 0rem;
+  background-clip: padding-box;
   @media (min-width: 768px) {
     flex-direction: row;
     background-size: 380px;

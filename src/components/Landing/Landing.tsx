@@ -19,7 +19,7 @@ import profileImage from '../../assets/profile.jpg';
 
 export const Landing = () => {
   return (
-    <LandingContainer>
+    <LandingContainer id='about-section'>
       <Content>
         <HeyHi>👋 Hello,</HeyHi>
         <NameTitle>I’m Chularat Tivuttita</NameTitle>

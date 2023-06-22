@@ -42,16 +42,16 @@ export const Header = () => {
         </Item>
         <Item isOnlyDesktop={true}>
           <Menu>
-            <MenuItem onClick={() => handleNavigate('about')}>
+            <MenuItem onClick={() => handleNavigate('about-section')}>
               About
             </MenuItem>
             <MenuItem onClick={() => handleNavigate('work-experience-section')}>
               Resume
             </MenuItem>
-            <MenuItem onClick={() => handleNavigate('work')}>
+            <MenuItem onClick={() => handleNavigate('portfolio-section')}>
               Works
             </MenuItem>
-            <MenuItem onClick={() => handleNavigate('contact')}>
+            <MenuItem onClick={() => handleNavigate('contact-section')}>
               Contact
             </MenuItem>
           </Menu>
