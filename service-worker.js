@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/chularat_portfolio/precache-manifest.08e2cfbfa32c47a264e39f18eebbe255.js"
+  "/chularat_portfolio/precache-manifest.95ec65df7bf3da85a86daf620a45cfa2.js"
 );
 
 workbox.clientsClaim();
