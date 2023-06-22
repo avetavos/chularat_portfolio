@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import aboutBg from '../../assets/about-bg.png';
+import bg from '../../assets/about-bg.png';
 
 export const WorkExperienceContainer = styled.div`
   ${tw`
@@ -17,24 +17,28 @@ export const WorkExperienceContainer = styled.div`
     md:py-14
     sm:px-2
     sm:py-8
-    p-5
+    py-5
+    pl-10
+    pr-5
     mt-24
     md:mt-0
   `}
   background-repeat: no-repeat;
-  background-size: 450px;
-  background-position: 0rem 0rem;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: -3rem 5rem;
   @media (min-width: 768px) {
-    background-size: 380px;
-    background-position: 27.5rem 4.5rem;
+    background-size: 600px;
+    background-position: 5rem 3rem;
   }
   @media (min-width: 1024px) {
-    background-size: 450px;
-    background-position: 41rem 5rem;
+    background-size: 600px;
+    background-position: 10rem 6rem;
   }
   @media (min-width: 1280px) {
-    background-size: 500px;
-    background-position: 48rem 8rem;
+    background-size: 800px;
+    background-position: 10rem 0rem;
   }
 `;
 
