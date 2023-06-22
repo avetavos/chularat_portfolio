@@ -1,12 +1,13 @@
 import React from 'react';
-import { Header } from './components';
-import { About } from './pages';
+import { Header, Landing, WorkExperience, ProjectList } from './components';
 
 function App() {
   return (
     <>
       <Header />
-      <About />
+      <Landing />
+      <WorkExperience />
+      <ProjectList />
     </>
   );
 }
