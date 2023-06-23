@@ -25,9 +25,9 @@ export const WorkExperienceContainer = styled.div`
   `}
   background-repeat: no-repeat;
   background-image: url(${bg});
+  background-repeat: no-repeat;
   background-size: 600px;
-  background-clip: padding-box;
-  background-position: -6rem 10rem;
+  background-position: -3rem 5rem;
   @media (min-width: 768px) {
     background-size: 600px;
     background-position: 5rem 3rem;
@@ -99,16 +99,16 @@ export const TimelineItem = styled.li`
     content: " ";
     border-radius: 500%;
     background: #000;
-    height: 20px;
-    width: 20px;
-    left: -10px;
+    height: 30px;
+    width: 30px;
+    left: -15px;
     ${tw`
-      md:[height: 16px]
-      md:[width: 16px]
-      md:[left: -8px]
-      lg:[height: 20px]
-      lg:[width: 20px]
-      lg:[left: -10px]
+      md:[height: 20px]
+      md:[width: 20px]
+      md:[left: -10px]
+      lg:[height: 24px]
+      lg:[width: 24px]
+      lg:[left: -12px]
     `}
   }
 `

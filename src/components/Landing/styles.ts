@@ -88,7 +88,7 @@ export const HeyHi = styled.h4`
   ${tw`
     mb-0
     md:text-sm
-    lg:text-xs
+    lg:[font-size: 1rem;]
   `}
   color: #828282;
   font-weight: 400;
