@@ -15,13 +15,14 @@ import {
   ProjectTag,
   ProjectListContainer,
   ViewMoreButton,
+  DescriptionList,
 } from './styles';
 import projectThumbnail from '../../assets/project-thumbnail.jpg';
 
 interface ICardItem {
   thumbnail: string;
   title: string;
-  description: string;
+  description: string[];
   tags: string[];
 }
 
@@ -30,129 +31,196 @@ const projectList: Record<string, any[]> = {
     {
       thumbnail: projectThumbnail,
       title: 'CRM for E-commerce',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['UX Research', 'Information Architecture', 'Interaction Design', 'Visual Design', 'Micro Interaction', 'Prototype', 'User Testing']
+      description: [
+        'Redesigned Dashboard, Order detail page, E-commerce setting, Setting, Theme Option, Review page, Shop Category page, Tag page, and Comment page.',
+        'UX Research and Collected information by comparing the analysis to WooCommerce.',
+      ],
+      tags: [
+        'UX Research',
+        'Information Architecture',
+        'Interaction Design',
+        'Visual Design',
+        'Micro Interaction',
+        'Prototype',
+        'User Testing',
+      ],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Redesign Point of Sale (POS)',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['Visual Design', 'UX Research', 'Customer Journey', 'User Testing'],
+      description: [
+        'UX Research by comparing the analysis to MultiPOS-Point of Sale for WooCommerce.',
+        'Redesign Login page, Cashier end page, Kitchen view page, and Create website using Figma to create high fidelity prototype.',
+        'Created and Control Visuals and present the projects to the team focusing on Intuitive design and accessibility design.',
+      ],
+      tags: [
+        'Visual Design',
+        'UX Research',
+        'Customer Journey',
+        'User Testing',
+      ],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Website design full screen and landing page',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['UX Research', 'Visual Design', 'Story Telling', 'Copy Writing', 'Prototype', 'Interaction Design', 'Animation Design', 'User Testing'],
+      description: [
+        'Collected information and created user persona/Captivate user experience.',
+        'Created Information website and e commerce website and Control User stories/User cases and Responsive layouts with design grids guide.',
+        'Usability testing by A/B testing method and Worked and communicated with a developer improve both UX and UI design.'
+      ],
+      tags: [
+        'UX Research',
+        'Visual Design',
+        'Story Telling',
+        'Copy Writing',
+        'Prototype',
+        'Interaction Design',
+        'Animation Design',
+        'User Testing',
+      ],
     },
     {
       thumbnail: projectThumbnail,
       title: 'E-mail Onboarding',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Graphic Design'],
+      description: [
+        'Define Journey mep, Story Telling, and Goal/Targets.',
+        'Created and Control Visuals and present the projects to the team focusing on Intuitive design.'
+      ],
+      tags: [
+        'UX Research',
+        'Visual Design',
+        'Customer Journey',
+        'Graphic Design',
+      ],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Honda Web Application',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-        tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Prototype'],
+      description: [
+        'Designed web application based on Honda key visual for Collect points and redeeming rewards from service usage used on the web application for Line Official Account.',
+        'Collected information and created user persona/Captivate user experience.'
+      ],
+      tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Prototype'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Create a Website Mock up',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [
+        'Create and Control Visuals UI mockups. Present the projects to the team that clearly show how sites work and look.',
+        'Generate clear ideas and concepts to collaborate with cross function team.'
+      ],
       tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'The List of Themes Website',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['UX Research', 'Visual Design', 'Story Telling', 'Copy Writing', 'Prototype', 'Customer Journey'],
+      description: [
+        'Coordinate with each team to deliver the standard design.',
+        'Design and Suggest a Friendly and end to end Ux Flow to each business requirement.'
+      ],
+      tags: [
+        'UX Research',
+        'Visual Design',
+        'Story Telling',
+        'Copy Writing',
+        'Prototype',
+        'Customer Journey',
+      ],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Banner Design',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [
+        'Create banners for social media posts including Facebook, Twitter, LINE, Instagram, and other Marketing requirements.'
+      ],
       tags: ['Graphic Design', 'UXUI'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Gambol Web Application',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [
+        'Design web application based on Gambol key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.'
+      ],
       tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Super Coffee Content and Web Application',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [
+        'Design web application for collect points and redeem rewards from sending the customer receipt.',
+        'Design base on Super Coffee key visual use on Facebook fan page, Line broadcast, Line web application for Line Official Account.'
+      ],
       tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Dna Web Application',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [
+        'Design web application based on Dna key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
+      ],
       tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Happy Pet Application',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['UX Research', 'User Interview', 'Visual Design', 'Design System', 'Customer Journey', 'Wireframe', 'Prototype', 'Site map', 'User Testing'],
+      description: [
+        'Design web application for people with pets and looking for cafes, hotels, shops that can go out to do activities with pets.',
+        'Conduct User Research, User interview and usability testing, including the designed Wireframe and Suggest the design solution.'
+      ],
+      tags: [
+        'UX Research',
+        'User Interview',
+        'Visual Design',
+        'Design System',
+        'Customer Journey',
+        'Wireframe',
+        'Prototype',
+        'Site map',
+        'User Testing',
+      ],
     },
   ],
   design: [
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
-      tags: ['UX Research', 'User Interview', 'Visual Design', 'Design System', 'Customer Journey'],
+      description: [],
+      tags: [
+        'UX Research',
+        'User Interview',
+        'Visual Design',
+        'Design System',
+        'Customer Journey',
+      ],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -160,29 +228,25 @@ const projectList: Record<string, any[]> = {
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -190,22 +254,19 @@ const projectList: Record<string, any[]> = {
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -213,8 +274,7 @@ const projectList: Record<string, any[]> = {
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
-      description:
-        'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+      description: [],
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -242,9 +302,7 @@ export const ProjectList = () => {
 
   const renderCardListOnDesktop = (cardList: ICardItem[]) => {
     const minLength =
-      cardList.length < maxDesktopItems
-        ? cardList.length
-        : maxDesktopItems;
+      cardList.length < maxDesktopItems ? cardList.length : maxDesktopItems;
     const cardListDisplay = [];
     for (let i = 0; i < minLength; i++) {
       cardListDisplay.push(renderCardItem(cardList[i]));
@@ -254,9 +312,7 @@ export const ProjectList = () => {
 
   const renderCardListOnMobile = (cardList: ICardItem[]) => {
     const minLength =
-      cardList.length < maxDesktopItems
-        ? cardList.length
-        : maxDesktopItems;
+      cardList.length < maxDesktopItems ? cardList.length : maxDesktopItems;
     const cardListDisplay = [];
     for (let i = 0; i < minLength; i++) {
       cardListDisplay.push(renderCardItem(cardList[i]));
@@ -268,7 +324,13 @@ export const ProjectList = () => {
     <Card>
       <ProjectThumbnail src={card.thumbnail} alt="project thumbnail" />
       <ProjectTitle>{card.title}</ProjectTitle>
-      <ProjectDescription>{card.description}</ProjectDescription>
+      <ProjectDescription>
+        <DescriptionList>
+          {card.description.map((text) => (
+            <li>{text}</li>
+          ))}
+        </DescriptionList>
+      </ProjectDescription>
       <TagSection>
         {card.tags.map((tag) => (
           <ProjectTag>{tag}</ProjectTag>
@@ -278,8 +340,8 @@ export const ProjectList = () => {
   );
 
   const onLoadMoreHandler = () => {
-    setMaxDesktopItems(projectList[selectedTab].length)
-  }
+    setMaxDesktopItems(projectList[selectedTab].length);
+  };
 
   const onChangeTabHandler = (tab: string) => {
     setSelectedTab(tab);
@@ -287,7 +349,10 @@ export const ProjectList = () => {
   };
 
   return (
-    <ProjectListContainer id='portfolio-section' sizing={projectList[selectedTab].length}>
+    <ProjectListContainer
+      id="portfolio-section"
+      sizing={projectList[selectedTab].length}
+    >
       <div>
         <PortFolioTitle>Latest Work</PortFolioTitle>
       </div>
@@ -336,7 +401,9 @@ export const ProjectList = () => {
           {renderCardListOnMobile(projectList[selectedTab])}
         </CardContainer>
         {projectList[selectedTab].length > maxDesktopItems && (
-          <ViewMoreButton type='button' onClick={() => onLoadMoreHandler()}>View More</ViewMoreButton>
+          <ViewMoreButton type="button" onClick={() => onLoadMoreHandler()}>
+            View More
+          </ViewMoreButton>
         )}
       </>
     </ProjectListContainer>

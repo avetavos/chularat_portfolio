@@ -259,3 +259,9 @@ export const ViewMoreButton = styled.a`
   font-size: 0.875rem;
   border-radius: 12px;
 `;
+
+export const DescriptionList = styled.ul`
+  ${tw`
+    pl-5
+  `}
+`
