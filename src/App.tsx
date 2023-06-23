@@ -1,13 +1,16 @@
 import React from 'react';
-import { Header, Landing, WorkExperience, ProjectList } from './components';
+import { Header, Landing, WorkExperience, ProjectList, Certification, Skill, Contract, Footer } from './components';
 
 function App() {
   return (
     <>
       <Header />
-      <Landing />
-      <WorkExperience />
-      <ProjectList />
+      <main>
+        <Landing />
+        <Skill />
+        <WorkExperience />
+        <ProjectList />
+      </main>
     </>
   );
 }
