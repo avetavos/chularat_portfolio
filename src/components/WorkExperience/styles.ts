@@ -29,14 +29,14 @@ export const WorkExperienceContainer = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: 600px;
-  background-position: -3rem 5rem;
+  background-position: 0 5rem;
   @media (min-width: 768px) {
     background-size: 600px;
-    background-position: 5rem 3rem;
+    background-position: 15rem 0rem;
   }
   @media (min-width: 1024px) {
     background-size: 600px;
-    background-position: 10rem 6rem;
+    background-position: 10rem 0rem;
   }
   @media (min-width: 1280px) {
     background-size: 700px;

@@ -27,7 +27,7 @@ export const CertificateContainer = styled.div`
   background-repeat: no-repeat;
   background-size: 1200px;
   background-position: center;
-  background-clip: margin-box;
+  background-clip: padding-box;
   @media (min-width: 768px) {
     background-size: 1000px;
     background-position: center;

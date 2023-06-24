@@ -27,19 +27,19 @@ export const SkillContainer = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: 450px;
-  background-position: -6rem 4rem;
-  background-clip: margin-box;
+  background-position: -6rem -1rem;
+  background-clip: padding-box;
   @media (min-width: 768px) {
     background-size: 450px;
     background-position: -2rem 2rem;
   }
   @media (min-width: 1024px) {
-    background-size: 500px;
-    background-position: -3rem 1rem;
+    background-size: 400px;
+    background-position: -3rem 0rem;
   }
   @media (min-width: 1280px) {
-    background-size: 500px;
-    background-position: 5rem 0;
+    background-size: 400px;
+    background-position: 5rem 0rem;
   }
 `;
 

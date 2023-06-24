@@ -88,7 +88,7 @@ export const TabList = styled.ul`
     items-center
     justify-center
     w-full
-    md:w-3/5
+    md:w-4/5
     h-full
     m-0
     p-0
@@ -263,9 +263,3 @@ export const ViewMoreButton = styled.a`
   font-size: 0.875rem;
   border-radius: 12px;
 `;
-
-export const DescriptionList = styled.ul`
-  ${tw`
-    pl-5
-  `}
-`
