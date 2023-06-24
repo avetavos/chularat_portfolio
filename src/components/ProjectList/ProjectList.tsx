@@ -18,6 +18,7 @@ import {
   DescriptionList,
 } from './styles';
 import projectThumbnail from '../../assets/project-thumbnail.jpg';
+import { isMobile } from 'react-device-detect';
 
 interface ICardItem {
   thumbnail: string;
@@ -292,6 +293,11 @@ export const ProjectList = () => {
   });
 
   useEffect(() => {
+    if (isMobile) {
+      setMaxDesktopItems(3)
+    } else {
+      setMaxDesktopItems(6)
+    }
     Object.entries(projectList).forEach(([key, value]) => {
       setProjectCount((prevState) => ({
         ...prevState,

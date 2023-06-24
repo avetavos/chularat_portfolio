@@ -10,13 +10,17 @@ export const CertificateContainer = styled.div`
     items-center
     overflow-x-hidden
     xl:px-40
-    xl:py-32
+    xl:pb-32
+    xl:mt-32
     lg:px-28
-    lg:py-24
+    lg:pb-24
+    lg:mt-24
     md:px-14
-    md:py-14
+    md:pb-14
+    md:mt-0
     sm:px-2
-    sm:py-8
+    sm:pb-8
+    sm:mt-8
     p-5
   `}
   background-image: url(${bg});

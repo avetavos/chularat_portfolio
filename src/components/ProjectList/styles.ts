@@ -14,25 +14,29 @@ export const ProjectListContainer = styled.div<IProjectListContainer>`
     overflow-x-hidden
     flex-col
     xl:px-40
-    xl:py-32
+    xl:pb-32
+    xl:mt-32
     lg:px-28
-    lg:py-24
+    lg:pb-24
+    lg:mt-24
     md:px-14
-    md:py-14
+    md:pb-14
     sm:px-2
-    sm:py-8
+    sm:pb-8
+    sm:mt-8
     p-5
     mt-24
     md:mt-0
   `}
-  background-repeat: no-repeat;
+  background-repeat: space;
   background-image: url(${bg});
-  ${({ sizing }) => css`background-size: ${sizing * 300}px;`}
+  ${({ sizing }) => css`background-size: 100vh;`}
   background-position: center;
   background-origin: content-box;
   background-clip: padding-box;
   background-color: transparent;
   @media (min-width: 768px) {
+    background-repeat: no-repeat;
     background-size: 800px;
   }
   @media (min-width: 1024px) {

@@ -66,8 +66,8 @@ export const Header = () => {
             <MenuItem onClick={() => handleNavigate('portfolio-section')}>
               Works
             </MenuItem>
-            <MenuItem onClick={() => handleNavigate('contact-section')}>
-              Contact
+            <MenuItem onClick={() => handleNavigate('certificate-section')}>
+              Certificates
             </MenuItem>
           </Menu>
         </Item>

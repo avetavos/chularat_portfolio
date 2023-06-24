@@ -10,16 +10,18 @@ export const WorkExperienceContainer = styled.div`
     overflow-x-hidden
     flex-col
     xl:px-40
-    xl:py-32
+    xl:pb-32
+    xl:mt-20
     lg:px-28
-    lg:py-24
+    lg:pb-24
+    lg:mt-24
     md:px-14
-    md:py-14
+    md:pb-14
     sm:px-2
-    sm:py-8
-    py-5
+    sm:pb-8
+    sm:mt-8
+    p-5
     pl-10
-    pr-5
     mt-24
     md:mt-0
   `}

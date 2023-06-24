@@ -31,7 +31,7 @@ const certList: ICertification[] = [
 
 export const Certification = () => {
   return (
-    <CertificateContainer>
+    <CertificateContainer id='certificate-section'>
       <div>
         <SectionSubTitle>I'm proud of this.</SectionSubTitle>
       </div>

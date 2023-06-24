@@ -10,13 +10,16 @@ export const SkillContainer = styled.div`
     items-center
     overflow-x-hidden
     xl:px-40
-    xl:py-32
+    xl:pb-32
+    xl:mt-32
     lg:px-28
-    lg:py-24
+    lg:pb-24
+    lg:mt-24
     md:px-14
-    md:py-14
+    md:pb-14
     sm:px-2
-    sm:py-8
+    sm:pb-8
+    sm:mt-3
     p-5
     mt-24
     md:mt-0
@@ -28,7 +31,7 @@ export const SkillContainer = styled.div`
   background-clip: margin-box;
   @media (min-width: 768px) {
     background-size: 450px;
-    background-position: -2rem 4.5rem;
+    background-position: -2rem 2rem;
   }
   @media (min-width: 1024px) {
     background-size: 500px;
