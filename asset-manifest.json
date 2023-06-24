@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chularat_portfolio/static/css/main.568a0fe2.css",
-    "main.js": "/chularat_portfolio/static/js/main.03e4343b.js",
+    "main.js": "/chularat_portfolio/static/js/main.ea8f69a8.js",
     "static/js/787.e46638dc.chunk.js": "/chularat_portfolio/static/js/787.e46638dc.chunk.js",
     "static/media/about-bg.png": "/chularat_portfolio/static/media/about-bg.882221578a059ee73941.png",
     "static/media/avatar.png": "/chularat_portfolio/static/media/avatar.dd735c5065d5c65e87a3.png",
@@ -17,11 +17,11 @@
     "static/media/ai-logo.png": "/chularat_portfolio/static/media/ai-logo.3d32c300b2109f2e1af1.png",
     "index.html": "/chularat_portfolio/index.html",
     "main.568a0fe2.css.map": "/chularat_portfolio/static/css/main.568a0fe2.css.map",
-    "main.03e4343b.js.map": "/chularat_portfolio/static/js/main.03e4343b.js.map",
+    "main.ea8f69a8.js.map": "/chularat_portfolio/static/js/main.ea8f69a8.js.map",
     "787.e46638dc.chunk.js.map": "/chularat_portfolio/static/js/787.e46638dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.568a0fe2.css",
-    "static/js/main.03e4343b.js"
+    "static/js/main.ea8f69a8.js"
   ]
 }
