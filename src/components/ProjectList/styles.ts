@@ -86,7 +86,7 @@ export const TabList = styled.ul`
     w-full
     md:w-3/5
     h-full
-    mt-5
+    m-0
     p-0
   `}
 `;

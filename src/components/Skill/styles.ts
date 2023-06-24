@@ -35,7 +35,7 @@ export const SkillContainer = styled.div`
     background-position: -3rem 1rem;
   }
   @media (min-width: 1280px) {
-    background-size: 600px;
+    background-size: 500px;
     background-position: 5rem 0;
   }
 `;
@@ -55,7 +55,8 @@ export const SkillSectionTitle = styled.h1`
     md:[font-size:2.5rem]
     text-center
     mt-0
-    mb-16
+    mb-5
+    md:mb-10
     text-black
   `}
   font-weight: 800;

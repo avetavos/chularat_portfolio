@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Landing, WorkExperience, ProjectList, Certification, Skill, Contract, Footer } from './components';
+import { Header, Landing, WorkExperience, ProjectList, Certification, Skill } from './components';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Skill />
         <WorkExperience />
         <ProjectList />
+        <Certification />
       </main>
     </>
   );

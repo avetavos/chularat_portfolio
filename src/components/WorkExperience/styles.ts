@@ -37,7 +37,7 @@ export const WorkExperienceContainer = styled.div`
     background-position: 10rem 6rem;
   }
   @media (min-width: 1280px) {
-    background-size: 800px;
+    background-size: 700px;
     background-position: 10rem 0rem;
   }
 `;
@@ -57,7 +57,8 @@ export const WorkExperienceSectionTitle = styled.h1`
     md:[font-size:2.5rem]
     text-center
     mt-0
-    mb-16
+    mb-5
+    md:mb-10
     text-black
   `}
   font-weight: 800;
@@ -109,6 +110,11 @@ export const TimelineItem = styled.li`
       lg:[height: 24px]
       lg:[width: 24px]
       lg:[left: -12px]
+    `}
+  }
+  &:last-child {
+    ${tw`
+      pb-0
     `}
   }
 `
