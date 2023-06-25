@@ -128,22 +128,6 @@ const projectList: Record<string, any[]> = {
       description: 'Design web application based on Dna key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
       tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Happy Pet Application',
-      description: 'Conduct User Research, User interview and usability testing, including the designed Wireframe and Suggest the design solution.',
-      tags: [
-        'UX Research',
-        'User Interview',
-        'Visual Design',
-        'Design System',
-        'Customer Journey',
-        'Wireframe',
-        'Prototype',
-        'Site map',
-        'User Testing',
-      ],
-    },
   ],
   design: [
     {

@@ -39,7 +39,7 @@ export const WorkExperienceContainer = styled.div`
     background-position: 10rem 0rem;
   }
   @media (min-width: 1280px) {
-    background-size: 700px;
+    background-size: 600px;
     background-position: 10rem 0rem;
   }
 `;

@@ -43,7 +43,7 @@ export const ProjectListContainer = styled.div<IProjectListContainer>`
     background-size: 650px;
   }
   @media (min-width: 1280px) {
-    background-size: 1000px;
+    background-size: 700px;
   }
 `;
 
