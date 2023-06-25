@@ -4,7 +4,6 @@ import {
   Item,
   Menu,
   MenuItem,
-  ActiveDot,
   Logo,
   MenuIcon,
   MobileMenuWindow,
@@ -35,6 +34,25 @@ export const Header = () => {
     }
   }, [isDrawerOpen])
 
+  const menuList = [
+    {
+      label: 'About Me',
+      path: 'about-section'
+    },
+    {
+      label: 'Experience & Skills',
+      path: 'work-experience-section'
+    },
+    {
+      label: 'Works',
+      path: 'portfolio-section'
+    },
+    {
+      label: 'Certificates',
+      path: 'certificate-section'
+    }
+  ]
+
   const contractLink = (
     <>
       <MenuLink href='mailto:tivuttitachularat@gmail.com'>
@@ -57,18 +75,11 @@ export const Header = () => {
         </Item>
         <Item isOnlyDesktop={true}>
           <Menu>
-            <MenuItem onClick={() => handleNavigate('about-section')}>
-              About
-            </MenuItem>
-            <MenuItem onClick={() => handleNavigate('work-experience-section')}>
-              Resume
-            </MenuItem>
-            <MenuItem onClick={() => handleNavigate('portfolio-section')}>
-              Works
-            </MenuItem>
-            <MenuItem onClick={() => handleNavigate('certificate-section')}>
-              Certificates
-            </MenuItem>
+            {menuList.map((item, index) => (
+              <MenuItem key={index} onClick={() => handleNavigate(item.path)}>
+                {item.label}
+              </MenuItem>
+            ))}
           </Menu>
         </Item>
         <Item isOnlyDesktop={true}>
@@ -89,18 +100,11 @@ export const Header = () => {
         <MobileContainer>
           <MobileItem>
             <MobileMenu>
-              <MobileMenuItem onClick={() => handleNavigate('about')}>
-                About
-              </MobileMenuItem>
-              <MobileMenuItem onClick={() => handleNavigate('resume')}>
-                Resume
-              </MobileMenuItem>
-              <MobileMenuItem onClick={() => handleNavigate('work')}>
-                Works
-              </MobileMenuItem>
-              <MobileMenuItem onClick={() => handleNavigate('contact')}>
-                Contact
-              </MobileMenuItem>
+              {menuList.map((item, index) => (
+                <MobileMenuItem key={index} onClick={() => handleNavigate(item.path)}>
+                  {item.label}
+                </MobileMenuItem>
+              ))}
             </MobileMenu>
           </MobileItem>
           <MobileItem style={{paddingTop: '4rem'}} isIcon={true}>
