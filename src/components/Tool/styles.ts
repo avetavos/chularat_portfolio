@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import bg from '../../assets/about-bg.png';
 
-export const SkillContainer = styled.div`
+export const ToolContainer = styled.div`
   ${tw`
     flex-col
     flex
@@ -43,7 +43,7 @@ export const SkillContainer = styled.div`
   }
 `;
 
-export const SkillTitle = styled.p`
+export const ToolTitle = styled.p`
   ${tw`
     text-sm
     text-center
@@ -52,7 +52,7 @@ export const SkillTitle = styled.p`
   color: #334155;
 `
 
-export const SkillSectionTitle = styled.h1`
+export const ToolSectionTitle = styled.h1`
   ${tw`
     text-3xl
     md:[font-size:2.5rem]
@@ -65,7 +65,7 @@ export const SkillSectionTitle = styled.h1`
   font-weight: 800;
 `;
 
-export const SkillList = styled.div`
+export const ToolList = styled.div`
   ${tw`
     flex
     flex-wrap
@@ -73,29 +73,16 @@ export const SkillList = styled.div`
     items-center
     w-full
     h-full
-    gap-5
+    gap-10
   `}
 `
 
-export const SkillItem = styled.img`
+export const ToolItem = styled.img`
   ${tw`
     md:[width: auto]
     md:[height: 100px;]
   `}
+  border-radius: 12px;
   width: auto;
   height: 80px;
-`
-
-export const SkillTag = styled.p`
-  ${tw`
-    py-1
-    px-3
-    text-black
-    m-0
-    text-lg
-    md:text-xl
-  `}
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-weight: 800;
 `

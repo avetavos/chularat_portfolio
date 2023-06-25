@@ -1,58 +1,41 @@
-import React from 'react'
-import { SkillContainer, SkillItem, SkillList, SkillSectionTitle, SkillTitle } from './styles'
-import figmaLogo from '../../assets/figma-logo.png'
-import xdLogo from '../../assets/xd-logo.png'
-import psLogo from '../../assets/ps-logo.png'
-import aiLogo from '../../assets/ai-logo.png'
-import lottieLogo from '../../assets/lottie-logo.png'
-import miroLogo from '../../assets/miro-logo.png'
-import jitterLogo from '../../assets/jitter-logo.png'
+import React from 'react';
+import {
+  SkillContainer,
+  SkillItem,
+  SkillList,
+  SkillSectionTitle,
+  SkillTag,
+} from './styles';
 
 const skillList = [
-  {
-    src: figmaLogo,
-    alt: 'Figma'
-  },
-  {
-    src: xdLogo,
-    alt: 'XD'
-  },
-  {
-    src: psLogo,
-    alt: 'PS'
-  },
-  {
-    src: aiLogo,
-    alt: 'AI'
-  },
-  {
-    src: lottieLogo,
-    alt: 'Lottie'
-  },
-  {
-    src: miroLogo,
-    alt: 'Miro'
-  },
-  {
-    src: jitterLogo,
-    alt: 'Jitter'
-  }
-]
+  'UX Research',
+  'UI Interaction Design',
+  'Micro Interaction and Animation',
+  'Graphic Design',
+  'Information Architecture',
+  'Design system',
+  'User Persona',
+  'Wireframe',
+  'Prototyping',
+  'Sitemap',
+  'Competitor Analysis',
+  'User Journey Map',
+  'Mock up',
+  'Usability Testing',
+  'A/B Testing',
+];
 
 export const Skill = () => {
   return (
     <SkillContainer>
       <div>
-        <SkillTitle>What I can do?</SkillTitle>
-      </div>
-      <div>
-        <SkillSectionTitle>Skills & Tools</SkillSectionTitle>
+        <SkillSectionTitle>Skills</SkillSectionTitle>
       </div>
       <SkillList>
-        {skillList.map((skill, index) => (
-          <SkillItem key={index} src={skill.src} alt={skill.alt} />
+        {skillList.map((tool, index) => (
+          <SkillTag key={index}>{tool}</SkillTag>
         ))}
       </SkillList>
     </SkillContainer>
-  )
-}
+  );
+};
