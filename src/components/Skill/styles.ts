@@ -10,8 +10,8 @@ export const SkillContainer = styled.div`
     items-center
     overflow-x-hidden
     xl:px-40
-    xl:pb-32
-    xl:mt-32
+    xl:pb-24
+    xl:mt-20
     lg:px-28
     lg:pb-24
     lg:mt-24
@@ -21,7 +21,7 @@ export const SkillContainer = styled.div`
     sm:pb-8
     sm:mt-3
     p-5
-    mt-24
+    mt-16
     md:mt-0
   `}
   background-image: url(${bg});
@@ -30,15 +30,15 @@ export const SkillContainer = styled.div`
   background-position: -6rem -1rem;
   background-clip: padding-box;
   @media (min-width: 768px) {
-    background-size: 400px;
-    background-position: -2rem 2rem;
+    background-size: 300px;
+    background-position: 0rem 2rem;
   }
   @media (min-width: 1024px) {
-    background-size: 350px;
-    background-position: -3rem 0rem;
+    background-size: 300px;
+    background-position: 5rem 0rem;
   }
   @media (min-width: 1280px) {
-    background-size: 350px;
+    background-size: 300px;
     background-position: 5rem 0rem;
   }
 `;
@@ -73,7 +73,8 @@ export const SkillList = styled.div`
     items-center
     w-full
     h-full
-    gap-5
+    gap-2
+    md:gap-5
   `}
 `
 
@@ -92,10 +93,9 @@ export const SkillTag = styled.p`
     px-3
     text-black
     m-0
-    text-lg
-    md:text-xl
+    md:[font-size: 1rem]
   `}
+  font-size: 1rem;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.5);
-  font-weight: 800;
 `

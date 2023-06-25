@@ -10,7 +10,7 @@ export const WorkExperienceContainer = styled.div`
     overflow-x-hidden
     flex-col
     xl:px-40
-    xl:pb-32
+    xl:pb-24
     xl:mt-20
     lg:px-28
     lg:pb-24
@@ -22,7 +22,7 @@ export const WorkExperienceContainer = styled.div`
     sm:mt-8
     p-5
     pl-10
-    mt-24
+    mt-16
     md:mt-0
   `}
   background-repeat: no-repeat;

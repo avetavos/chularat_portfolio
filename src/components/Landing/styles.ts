@@ -11,7 +11,7 @@ export const LandingContainer = styled.div`
     items-center
     overflow-x-hidden
     xl:px-40
-    xl:py-32
+    xl:py-24
     lg:px-28
     lg:py-24
     md:px-14
@@ -37,7 +37,7 @@ export const LandingContainer = styled.div`
   }
   @media (min-width: 1280px) {
     background-size: 500px;
-    background-position: 48rem 8rem;
+    background-position: 48rem 7rem;
   }
 `;
 

@@ -10,8 +10,8 @@ export const CertificateContainer = styled.div`
     items-center
     overflow-x-hidden
     xl:px-40
-    xl:pb-32
-    xl:mt-32
+    xl:pb-24
+    xl:mt-20
     lg:px-28
     lg:pb-24
     lg:mt-24
@@ -22,6 +22,7 @@ export const CertificateContainer = styled.div`
     sm:pb-8
     sm:mt-8
     p-5
+    mt-16
   `}
   background-image: url(${bg});
   background-repeat: no-repeat;
@@ -67,11 +68,12 @@ export const SectionTitle = styled.h1`
 export const CertificateWrapper = styled.div`
   ${tw`
     flex
-    p-5
+    p-3
     flex-col
     mb-5
     justify-center
     items-center
+    lg:items-start
   `}
   &:nth-child(odd) {
     ${tw`md:flex-row-reverse`};
@@ -89,8 +91,9 @@ export const CertificateWrapper = styled.div`
 export const CertificateImage = styled.img`
   ${tw`
     w-full
-    md:w-1/2
+    md:w-1/3
   `}
+  border-radius: 22px;
   height: 100%;
 `;
 

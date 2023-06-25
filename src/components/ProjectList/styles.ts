@@ -14,8 +14,8 @@ export const ProjectListContainer = styled.div<IProjectListContainer>`
     overflow-x-hidden
     flex-col
     xl:px-40
-    xl:pb-32
-    xl:mt-32
+    xl:pb-24
+    xl:mt-20
     lg:px-28
     lg:pb-24
     lg:mt-24
@@ -25,7 +25,7 @@ export const ProjectListContainer = styled.div<IProjectListContainer>`
     sm:pb-8
     sm:mt-8
     p-5
-    mt-24
+    mt-16
     md:mt-0
   `}
   background-repeat: space;

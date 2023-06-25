@@ -10,8 +10,8 @@ export const ToolContainer = styled.div`
     items-center
     overflow-x-hidden
     xl:px-40
-    xl:pb-32
-    xl:mt-32
+    xl:pb-24
+    xl:mt-20
     lg:px-28
     lg:pb-24
     lg:mt-24
@@ -21,25 +21,25 @@ export const ToolContainer = styled.div`
     sm:pb-8
     sm:mt-3
     p-5
-    mt-24
+    mt-16
     md:mt-0
   `}
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-size: 400px;
-  background-position: -6rem -1rem;
+  background-size: 350px;
+  background-position: -3rem -2rem;
   background-clip: padding-box;
   @media (min-width: 768px) {
     background-size: 400px;
-    background-position: -2rem 2rem;
+    background-position: 20rem 2rem;
   }
   @media (min-width: 1024px) {
-    background-size: 350px;
-    background-position: -3rem 0rem;
+    background-size: 300px;
+    background-position: 45rem 0rem;
   }
   @media (min-width: 1280px) {
-    background-size: 350px;
-    background-position: 5rem 0rem;
+    background-size: 300px;
+    background-position: 55rem 0rem;
   }
 `;
 
