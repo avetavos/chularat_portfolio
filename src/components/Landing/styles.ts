@@ -20,6 +20,7 @@ export const LandingContainer = styled.div`
     sm:py-8
     p-5
   `}
+  margin-top: 76px;
   flex-direction: column-reverse;
   background-image: url(${aboutBg});
   background-repeat: no-repeat;
@@ -180,7 +181,6 @@ export const ProfileImage = styled.img`
 export const ContentProfileImage = styled(Content)`
   ${tw`
     items-center
-    py-5
     md:py-0
   `}
 `

@@ -1,22 +1,30 @@
 import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-scroll';
 import bg from '../../assets/footer-mobile.png';
 
 export const Navbar = styled.nav`
   ${tw`
+    fixed
     flex 
     items-center 
     justify-between 
     flex-wrap 
+    px-5
     py-4
     xl:px-40
+    xl:[width: calc(100vw - 20rem)]
     lg:px-28
+    lg:[width: calc(100vw - 14rem)]
     md:px-14
-    sm:px-2
-    p-5
+    md:[width: calc(100vw - 7rem)]
   `};
+  top: 0;
+  background-color: #f5f5f5;
+  width: calc(100vw - 2.5rem);
   font-weight: 300;
+  z-index: 10;
 `;
 
 interface IItem {
@@ -61,6 +69,7 @@ export const Logo = styled.img`
 export const Menu = styled.ul`
   ${tw`
     inline-flex
+    p-0
   `}
   margin: 0;
 `;
@@ -74,11 +83,18 @@ export const MenuItem = styled.li`
     justify-center
     items-center
   `};
+`;
+
+export const SmoothLink = styled(Link)`
+  ${tw`
+    text-black
+  `}
   font-size: 0.95rem;
+  text-decoration: none;
   &.active {
     font-weight: 700;
   }
-`;
+`
 
 export const MenuLink = styled.a`
   ${tw`
@@ -184,3 +200,9 @@ export const MobileMenuItem = styled.li`
     font-weight: 700;
   }
 `;
+
+export const ActiveDotMobile = styled(ActiveDot)`
+  position: relative;
+  left: 50%;
+  top: 5px;
+`

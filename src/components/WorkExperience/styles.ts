@@ -105,6 +105,7 @@ export const TimelineItem = styled.li`
     height: 20px;
     width: 20px;
     left: -10px;
+    z-index: 1;
     ${tw`
       md:[height: 20px]
       md:[width: 20px]

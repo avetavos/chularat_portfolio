@@ -33,7 +33,7 @@ export const Landing = () => {
         </Subtitle>
         <BtnContainer>
           <DownloadResumeBtn>Download Resume 👋</DownloadResumeBtn>
-          <DiscoveryBtn href="#work-experience-section">
+          <DiscoveryBtn href="#portfolio-section">
             Discover my works
             <Icon
               icon={faArrowDown}
