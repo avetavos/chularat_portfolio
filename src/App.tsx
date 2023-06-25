@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Landing, WorkExperience, ProjectList, Certification, Skill } from './components';
+import { Header, Landing, WorkExperience, ProjectList, Certification, Skill, Education } from './components';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <main>
         <Landing />
+        <Education />
         <Skill />
         <WorkExperience />
         <ProjectList />

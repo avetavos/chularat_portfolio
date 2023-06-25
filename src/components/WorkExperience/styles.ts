@@ -102,9 +102,9 @@ export const TimelineItem = styled.li`
     content: " ";
     border-radius: 500%;
     background: #000;
-    height: 30px;
-    width: 30px;
-    left: -15px;
+    height: 20px;
+    width: 20px;
+    left: -10px;
     ${tw`
       md:[height: 20px]
       md:[width: 20px]
