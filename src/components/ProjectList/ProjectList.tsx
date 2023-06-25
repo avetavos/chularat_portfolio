@@ -17,7 +17,7 @@ import {
   ViewMoreButton
 } from './styles';
 import projectThumbnail from '../../assets/project-thumbnail.jpg';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isTablet } from 'react-device-detect';
 
 interface ICardItem {
   thumbnail: string;
@@ -257,7 +257,7 @@ export const ProjectList = () => {
   });
 
   useEffect(() => {
-    if (isMobile) {
+    if (isMobile && !isTablet) {
       setMaxDesktopItems(3)
     } else {
       setMaxDesktopItems(6)
@@ -311,7 +311,11 @@ export const ProjectList = () => {
 
   const onChangeTabHandler = (tab: string) => {
     setSelectedTab(tab);
-    setMaxDesktopItems(6);
+    if (isMobile && !isTablet) {
+      setMaxDesktopItems(3)
+    } else {
+      setMaxDesktopItems(6)
+    }
   };
 
   return (

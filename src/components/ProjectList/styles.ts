@@ -37,10 +37,10 @@ export const ProjectListContainer = styled.div<IProjectListContainer>`
   background-color: transparent;
   @media (min-width: 768px) {
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 650px;
   }
   @media (min-width: 1024px) {
-    background-size: 800px;
+    background-size: 650px;
   }
   @media (min-width: 1280px) {
     background-size: 1000px;
