@@ -106,6 +106,7 @@ export const CertificateDate = styled.p`
   ${tw`
     font-bold
   `}
+  font-size: 1rem;
 `
 
 export const CertificateDescription = styled.p``

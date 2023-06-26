@@ -56,10 +56,6 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   ${tw`
-    sm:text-2xl
-    md:[font-size:1.75rem]
-    lg:text-3xl
-    xl:text-4xl
     font-black
     text-black
     sm:leading-snug
@@ -73,10 +69,6 @@ export const Title = styled.h2`
 
 export const NameTitle = styled.h1`
   ${tw`
-    sm:text-2xl
-    md:text-3xl
-    lg:text-5xl
-    xl:text-5xl
     font-black
     text-black
     mt-0
@@ -108,7 +100,7 @@ export const Subtitle = styled.h3`
 `;
 
 export const TextBold = styled.span`
-  font-weight: 700 !important;
+  font-weight: 800 !important;
 `;
 
 export const BtnContainer = styled.div`
@@ -137,7 +129,7 @@ export const DownloadResumeBtn = styled.a`
     bg-black
     cursor-pointer
   `}
-  font-size: 0.875rem;
+  font-size: 1rem;
   border-radius: 12px;
 `;
 
@@ -155,7 +147,7 @@ export const DiscoveryBtn = styled.a`
     text-black
     hover:decoration-solid
   `}
-  font-size: 0.875rem;
+  font-size: 1rem;
   border-radius: 12px;
   text-decoration: none;
 `;

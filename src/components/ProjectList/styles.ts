@@ -112,6 +112,7 @@ export const Tab = styled.li`
 `}
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-size: 1rem;
   &:nth-child(1) {
     ${tw`
       mt-5
@@ -140,7 +141,7 @@ export const Tab = styled.li`
     `}
   }
   &.active {
-    font-weight: 700;
+    font-weight: 800;
   }
 `;
 
@@ -150,7 +151,7 @@ export const PowerNumber = styled.sub`
     hover:font-bold
   `}
   &.active {
-    font-weight: 700;
+    font-weight: 800;
   }
 `
 
@@ -210,18 +211,19 @@ export const ProjectThumbnail = styled.img`
 
 export const ProjectTitle = styled.h3`
   ${tw`
-    text-lg
     mt-3
     mb-3
     text-black
   `}
+  font-size: 1.25rem;
+  font-weight: 800;
 `;
 
 export const ProjectDescription = styled.p`
   ${tw`
-    text-sm
     mb-0
   `}
+  font-size: 1rem;
   color: #334155;
 `;
 

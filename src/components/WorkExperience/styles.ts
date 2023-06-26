@@ -124,17 +124,17 @@ export const TimelineItem = styled.li`
 
 export const TimelineTitle = styled.div`
   ${tw`
-    md:[font-size: 1rem]
     font-bold
     mb-2
   `}
+  font-size: 1rem;
 `
 
 export const TimelineSubtitle = styled.a`
   ${tw`
-    md:[font-size: 1rem]
     font-bold
   `}
+  font-size: 1rem;
   text-decoration: none;
   color: rgb(51, 65, 85);
 `

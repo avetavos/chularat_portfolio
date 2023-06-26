@@ -92,7 +92,7 @@ export const SmoothLink = styled(Link)`
   font-size: 0.95rem;
   text-decoration: none;
   &.active {
-    font-weight: 700;
+    font-weight: 800;
   }
 `
 
@@ -197,7 +197,7 @@ export const MobileMenuItem = styled.li`
     list-none
   `}
   &.active {
-    font-weight: 700;
+    font-weight: 800;
   }
 `;
 
