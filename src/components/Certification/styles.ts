@@ -26,20 +26,17 @@ export const CertificateContainer = styled.div`
   `}
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-size: 1200px;
+  background-size: 700px;
   background-position: center;
   background-clip: padding-box;
   @media (min-width: 768px) {
-    background-size: 1000px;
-    background-position: center;
+    background-size: 700px;
   }
   @media (min-width: 1024px) {
-    background-size: 1200px;
-    background-position: center;
+    background-size: 700px;
   }
   @media (min-width: 1280px) {
-    background-size: 1200px;
-    background-position: 5rem 50%;
+    background-size: 700px;
   }
 `;
 
@@ -70,38 +67,30 @@ export const CertificateWrapper = styled.div`
     flex
     p-3
     flex-col
-    mb-5
     justify-center
     items-center
-    lg:items-start
   `}
-  &:nth-child(odd) {
-    ${tw`md:flex-row-reverse`};
-  }
-  &:nth-child(even) {
-    ${tw`md:flex-row`};
-  }
-  &:last-child {
-    ${tw`mb-0`};
-  }
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 22px;
+  max-width: 100vw;
 `;
 
 export const CertificateImage = styled.img`
   ${tw`
     w-full
-    md:w-1/3
+    mb-5
   `}
+  max-width: 300px;
+  @media (min-width: 1024px) {
+    max-width: 450px;
+  }
   border-radius: 22px;
   height: 100%;
 `;
 
 export const CertificateDetails = styled.div`
   ${tw`
-    px-0
-    md:px-5
+    px-5
     lg:px-10
+    lg:[max-width: 40vw]
   `}
 `
 

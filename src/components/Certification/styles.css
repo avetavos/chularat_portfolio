@@ -1,0 +1,15 @@
+.carousel .slide {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel .control-dots .dot {
+  background-color: #000;
+  border: 1px solid #000;
+  box-shadow: none;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}

@@ -11,6 +11,9 @@ import {
   SectionTitle,
 } from './styles';
 import { Element } from 'react-scroll';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./styles.css"
 
 interface ICertification {
   title: string;
@@ -38,7 +41,7 @@ const certList: ICertification[] = [
     title: 'Udemy Online Courses - Adobe Illustrator CC',
     date: 'Apr 2020',
     description:
-      'Leaded about Graphic design Tools, logo design and build create assets like colors, patterns and drawings using the Illustrator mobile app. Learned The key Tools of Illustrator: shapes, text, masking, effects, and exporting.',
+      'Leaded about Graphic design Tools, logo design and build create assets like colors, patterns and drawings using the Illustrator mobile app. Learned The key Tools of Illustrator shapes, text, masking, effects, and exporting.',
     img: 'https://i.pinimg.com/736x/e8/23/d4/e823d44a70a0c49cd05a440610e54cdb.jpg',
   },
 ];
@@ -54,18 +57,20 @@ export const Certification = () => {
         <div>
           <SectionTitle>Certification</SectionTitle>
         </div>
-        {certList.map((cert, index) => (
-          <CertificateWrapper>
-            <CertificateImage src={cert.img} />
-            <CertificateDetails>
-              <CertificateTitle>{cert.title}</CertificateTitle>
-              <CertificateDate>{cert.date}</CertificateDate>
-              <CertificateDescription>
-                {cert.description}
-              </CertificateDescription>
-            </CertificateDetails>
-          </CertificateWrapper>
-        ))}
+        <Carousel showStatus={false} autoPlay={true} infiniteLoop={true}>
+          {certList.map((cert, index) => (
+            <CertificateWrapper key={index}>
+              <CertificateImage src={cert.img} />
+              <CertificateDetails>
+                <CertificateTitle>{cert.title}</CertificateTitle>
+                <CertificateDate>{cert.date}</CertificateDate>
+                <CertificateDescription>
+                  {cert.description}
+                </CertificateDescription>
+              </CertificateDetails>
+            </CertificateWrapper>
+          ))}
+        </Carousel>
       </CertificateContainer>
     </>
   );
