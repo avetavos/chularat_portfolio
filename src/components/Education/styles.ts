@@ -94,3 +94,22 @@ export const EducationDuration = styled.h4`
   font-size: 1rem;
 `;
 
+export const DownloadTranscriptBtn = styled.a`
+  ${tw`
+    text-center
+    flex-1
+    text-white
+    px-2
+    py-3
+    mt-5
+    xl:px-6
+    xl:py-4
+    lg:px-3
+    lg:py-3
+    cursor-pointer
+  `}
+  background: #2A2A2A;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 12px;
+`;
