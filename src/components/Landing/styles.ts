@@ -38,7 +38,7 @@ export const LandingContainer = styled.div`
   }
   @media (min-width: 1280px) {
     background-size: 500px;
-    background-position: 48rem 7rem;
+    background-position: 48rem 4rem;
   }
 `;
 
@@ -51,6 +51,8 @@ export const Content = styled.div`
     h-full
     items-start
     overflow-x-hidden
+    md:basis-3/5
+    lg:basis-1/2
   `}
 `;
 
@@ -126,9 +128,9 @@ export const DownloadResumeBtn = styled.a`
     xl:py-4
     lg:px-3
     lg:py-3
-    bg-black
     cursor-pointer
   `}
+  background: #2A2A2A;
   font-size: 1rem;
   border-radius: 12px;
 `;
@@ -174,5 +176,7 @@ export const ContentProfileImage = styled(Content)`
   ${tw`
     items-center
     md:py-0
+    md:basis-2/5
+    lg:basis-1/2
   `}
 `
