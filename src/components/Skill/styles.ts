@@ -28,20 +28,20 @@ export const SkillContainer = styled.div`
   `}
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-size: 400px;
-  background-position: -6rem -1rem;
+  background-size: 1000px;
+  background-position: -6rem 90%;
   background-clip: padding-box;
   @media (min-width: 768px) {
-    background-size: 300px;
-    background-position: 0rem 2rem;
+    background-size: 1000px;
+    background-position: 5rem 2rem;
   }
   @media (min-width: 1024px) {
-    background-size: 300px;
-    background-position: 5rem 0rem;
+    background-size: 1000px;
+    background-position: 30rem -4rem;
   }
   @media (min-width: 1280px) {
-    background-size: 300px;
-    background-position: 5rem 0rem;
+    background-size: 800px;
+    background-position: 15rem -2rem;
   }
 `;
 
@@ -115,7 +115,8 @@ export const SkillCounter = styled.h1`
 export const SkillTitle = styled.h1`
   ${tw`
     text-xl
-    my-0
+    mt-0
+    mb-3
   `}
 `;
 
@@ -127,8 +128,21 @@ export const SkillDetailsContainer = styled.div`
   `}
 `;
 
-export const SkillDetails = styled.p`
+export const SkillDetails = styled.div`
   ${tw`
     flex
+    flex-wrap
+    gap-2
   `}
 `
+
+export const Tag = styled.p`
+  ${tw`
+    p-2
+    text-black
+    m-0
+  `}
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+`;

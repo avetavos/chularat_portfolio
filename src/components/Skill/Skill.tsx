@@ -10,6 +10,7 @@ import {
   SkillItem,
   SkillSectionTitle,
   SkillTitle,
+  Tag,
 } from './styles';
 
 const skillList = [{
@@ -74,7 +75,9 @@ export const Skill = () => {
             </SkillCounterContainer>
             <SkillDetailsContainer>
               <SkillTitle>{skill.label}</SkillTitle>
-              <SkillDetails>{skill.skills.join(' / ')}</SkillDetails>
+              <SkillDetails>{skill.skills.map((skillText, skillIndex) => (
+                <Tag key={skillIndex}>{skillText}</Tag>
+              ))}</SkillDetails>
             </SkillDetailsContainer>
           </SkillItem>
         ))}
