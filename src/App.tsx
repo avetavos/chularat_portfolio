@@ -22,7 +22,6 @@ function App() {
         <ProjectList />
         <Certification />
         <Skill />
-        <Tool />
       </main>
       <Footer />
     </>

@@ -5,6 +5,7 @@ import bg from '../../assets/about-bg.png';
 export const SkillContainer = styled.div`
   ${tw`
     flex-col
+    lg:flex-row
     flex
     h-full
     items-center
@@ -23,6 +24,7 @@ export const SkillContainer = styled.div`
     p-5
     mt-16
     md:mt-0
+    lg:items-start
   `}
   background-image: url(${bg});
   background-repeat: no-repeat;
@@ -43,15 +45,6 @@ export const SkillContainer = styled.div`
   }
 `;
 
-export const SkillTitle = styled.p`
-  ${tw`
-    text-sm
-    text-center
-    mb-3
-  `}
-  color: #334155;
-`
-
 export const SkillSectionTitle = styled.h1`
   ${tw`
     text-3xl
@@ -65,37 +58,77 @@ export const SkillSectionTitle = styled.h1`
   font-weight: 800;
 `;
 
-export const SkillList = styled.div`
+export const SkillHeaderContent = styled.div`
   ${tw`
     flex
-    flex-wrap
-    justify-center
+    lg:basis-1/6
     items-center
-    w-full
-    h-full
-    gap-2
-    md:gap-5
+    justify-center
   `}
-`
+`;
 
-export const SkillItem = styled.img`
+export const SkillBodyContent = styled.div`
   ${tw`
-    md:[width: auto]
-    md:[height: 100px;]
+    flex
+    items-start
+    flex-col
+    justify-start
+    lg:basis-5/6
+    py-5
+    md:py-0
   `}
-  width: auto;
-  height: 80px;
-`
+`;
 
-export const SkillTag = styled.p`
+export const SkillItem = styled.div`
   ${tw`
-    py-1
-    px-3
-    text-black
+    flex
+    flex-row
+    py-14
+    first:pt-0
+  `}
+  width: 100%;
+  border-bottom: 1px solid rgba(16,16,16, 0.1);
+  &:last-child {
+    border-bottom: none;
+  }
+`;
+
+export const SkillCounterContainer = styled.div`
+  ${tw`
+    flex
+    justify-center
+    items-start
+    basis-1/6
+  `}
+`;
+
+export const SkillCounter = styled.h1`
+  ${tw`
+    flex
+    items-center
+    justify-start
     m-0
-    md:[font-size: 1rem]
+    text-xl
   `}
-  font-size: 1rem;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.5);
+`;
+
+export const SkillTitle = styled.h1`
+  ${tw`
+    text-xl
+    my-0
+  `}
+`;
+
+export const SkillDetailsContainer = styled.div`
+  ${tw`
+    flex
+    basis-5/6
+    flex-col
+  `}
+`;
+
+export const SkillDetails = styled.p`
+  ${tw`
+    flex
+  `}
 `
