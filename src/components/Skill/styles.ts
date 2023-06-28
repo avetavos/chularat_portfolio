@@ -89,6 +89,7 @@ export const SkillItem = styled.div`
   width: 100%;
   border-bottom: 1px solid rgba(16,16,16, 0.1);
   &:last-child {
+    padding-bottom: 0;
     border-bottom: none;
   }
 `;
@@ -138,11 +139,11 @@ export const SkillDetails = styled.div`
 
 export const Tag = styled.p`
   ${tw`
-    p-2
+    p-1
+    md:p-2
     text-black
     m-0
   `}
-  font-size: 1rem;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.5);
 `;

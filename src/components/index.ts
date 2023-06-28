@@ -7,3 +7,4 @@ export * from './Tool/Tool';
 export * from './Education/Education';
 export * from './Skill/Skill';
 export * from './Footer/Footer';
+export * from './Contact/Contact';

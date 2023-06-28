@@ -5,7 +5,7 @@ import {
   WorkExperience,
   ProjectList,
   Certification,
-  Tool,
+  Contact,
   Education,
   Skill,
   Footer,
@@ -22,6 +22,7 @@ function App() {
         <ProjectList />
         <Certification />
         <Skill />
+        <Contact />
       </main>
       <Footer />
     </>
