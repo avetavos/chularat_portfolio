@@ -1,5 +1,15 @@
 import React from 'react';
-import { Header, Landing, WorkExperience, ProjectList, Certification, Tool, Education, Skill } from './components';
+import {
+  Header,
+  Landing,
+  WorkExperience,
+  ProjectList,
+  Certification,
+  Tool,
+  Education,
+  Skill,
+  Footer,
+} from './components';
 
 function App() {
   return (
@@ -9,11 +19,12 @@ function App() {
         <Landing />
         <Education />
         <WorkExperience />
-        <Skill />
-        <Tool />
         <ProjectList />
         <Certification />
+        <Skill />
+        <Tool />
       </main>
+      <Footer />
     </>
   );
 }

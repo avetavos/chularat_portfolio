@@ -6,8 +6,7 @@ import bg from '../../assets/footer-mobile.png';
 
 export const Navbar = styled.nav`
   ${tw`
-    fixed
-    flex 
+    flex
     items-center 
     justify-between 
     flex-wrap 
@@ -19,9 +18,12 @@ export const Navbar = styled.nav`
     lg:[width: calc(100vw - 14rem)]
     md:px-14
     md:[width: calc(100vw - 7rem)]
+    flex-col
+    lg:flex-row
   `};
-  top: 0;
-  background-color: #f5f5f5;
+  color: #fff;
+  bottom: 0;
+  background: #000;
   width: calc(100vw - 2.5rem);
   font-weight: 300;
   z-index: 10;
@@ -68,10 +70,13 @@ export const Logo = styled.img`
 
 export const Menu = styled.ul`
   ${tw`
-    inline-flex
+    flex
+    flex-col
+    my-12
+    lg:my-0
+    lg:flex-row
     p-0
   `}
-  margin: 0;
 `;
 
 export const MenuItem = styled.li`
@@ -87,7 +92,7 @@ export const MenuItem = styled.li`
 
 export const SmoothLink = styled(Link)`
   ${tw`
-    text-black
+    text-white
   `}
   font-size: 0.95rem;
   text-decoration: none;
@@ -105,7 +110,7 @@ export const MenuLink = styled.a`
 
 export const ActiveDot = styled.div`
   ${tw`
-    bg-black
+    bg-white
     rounded-full
     absolute
   `}
@@ -168,13 +173,19 @@ export const MobileItem = styled.div`
   ${({ isIcon }: IMobileItem) => isIcon && tw`gap-4`}
 `;
 
-export const HandleDrawerBtn = styled.button`
+export const HandleBackToTopBtn = styled.button`
   ${tw`
     border-none
     bg-transparent
-    p-2
-    text-black
+    py-2
+    px-3
+    text-white
+    mb-5
+    md:mb-0
   `}
+  background: #2A2A2A;
+  font-size: 1rem;
+  border-radius: 10px;
 `;
 
 export const MobileMenu = styled.ul`

@@ -8,7 +8,7 @@ import {
   MenuIcon,
   MobileMenuWindow,
   MobileMenuItem,
-  HandleBrawerBtn,
+  HandleDrawerBtn,
   MobileContainer,
   MobileItem,
   MobileMenu,
@@ -124,14 +124,14 @@ export const Header = () => {
         </Item>
         <Item isOnlyDesktop={true}>{contractLink}</Item>
         <Item isOnlyMobile={true}>
-          <HandleBrawerBtn
+          <HandleDrawerBtn
             type="button"
             onClick={() => {
               setIsDrawerOpen(true);
             }}
           >
             <MenuIcon icon={faBars} size="xl" style={{ margin: 0 }} />
-          </HandleBrawerBtn>
+          </HandleDrawerBtn>
         </Item>
       </Navbar>
       <MobileMenuWindow isOpen={isDrawerOpen}>
@@ -156,14 +156,14 @@ export const Header = () => {
             {contractLink}
           </MobileItem>
           <MobileItem style={{ paddingTop: '4rem' }}>
-            <HandleBrawerBtn
+            <HandleDrawerBtn
               type="button"
               onClick={() => {
                 setIsDrawerOpen(false);
               }}
             >
               <MenuIcon icon={faXmark} size="xl" style={{ margin: 0 }} />
-            </HandleBrawerBtn>
+            </HandleDrawerBtn>
           </MobileItem>
         </MobileContainer>
       </MobileMenuWindow>

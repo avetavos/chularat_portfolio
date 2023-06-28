@@ -259,9 +259,9 @@ export const ViewMoreButton = styled.a`
     xl:py-4
     lg:px-3
     lg:py-3
-    bg-black
     cursor-pointer
   `}
+  background: #2A2A2A;
   font-size: 0.875rem;
   border-radius: 12px;
 `;

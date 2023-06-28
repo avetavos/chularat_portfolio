@@ -24,6 +24,7 @@ export const ToolContainer = styled.div`
     mt-16
     md:mt-0
   `}
+  margin-bottom: 76px;
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: 350px;
