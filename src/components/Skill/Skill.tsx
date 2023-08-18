@@ -12,8 +12,10 @@ import {
   SkillTitle,
   Tag,
 } from './styles';
+import { Element } from 'react-scroll';
 
-const skillList = [{
+const skillList = [
+  {
     label: 'Hard Skills',
     skills: [
       'UX Research',
@@ -54,34 +56,37 @@ const skillList = [{
       'Photoshop',
       'Lottie',
       'Jitter',
-      'Marvel'
+      'Marvel',
     ],
   },
 ];
 
 export const Skill = () => {
   return (
-    <SkillContainer>
-      <SkillHeaderContent>
-        <SkillSectionTitle>My Skills</SkillSectionTitle>
-      </SkillHeaderContent>
-      <SkillBodyContent>
-        {skillList.map((skill, index) => (
-          <SkillItem key={index}>
-            <SkillCounterContainer>
-              <SkillCounter>
-                0{index + 1}
-              </SkillCounter>
-            </SkillCounterContainer>
-            <SkillDetailsContainer>
-              <SkillTitle>{skill.label}</SkillTitle>
-              <SkillDetails>{skill.skills.map((skillText, skillIndex) => (
-                <Tag key={skillIndex}>{skillText}</Tag>
-              ))}</SkillDetails>
-            </SkillDetailsContainer>
-          </SkillItem>
-        ))}
-      </SkillBodyContent>
-    </SkillContainer>
+    <>
+      <Element name="skills-section"></Element>
+      <SkillContainer>
+        <SkillHeaderContent>
+          <SkillSectionTitle>My Skills</SkillSectionTitle>
+        </SkillHeaderContent>
+        <SkillBodyContent>
+          {skillList.map((skill, index) => (
+            <SkillItem key={index}>
+              <SkillCounterContainer>
+                <SkillCounter>0{index + 1}</SkillCounter>
+              </SkillCounterContainer>
+              <SkillDetailsContainer>
+                <SkillTitle>{skill.label}</SkillTitle>
+                <SkillDetails>
+                  {skill.skills.map((skillText, skillIndex) => (
+                    <Tag key={skillIndex}>{skillText}</Tag>
+                  ))}
+                </SkillDetails>
+              </SkillDetailsContainer>
+            </SkillItem>
+          ))}
+        </SkillBodyContent>
+      </SkillContainer>
+    </>
   );
 };

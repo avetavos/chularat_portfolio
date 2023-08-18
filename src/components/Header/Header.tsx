@@ -32,6 +32,7 @@ enum MenuList {
   EXPERIENCE_SKILLS = 'Experience & Skills',
   WORKS = 'Works',
   CERTIFICATES = 'Certificates',
+  SKILLS = 'Skills',
 }
 
 export const Header = () => {
@@ -76,6 +77,11 @@ export const Header = () => {
       label: 'Certificates',
       path: 'certificate-section',
       activeKey: MenuList.CERTIFICATES,
+    },
+    {
+      label: 'Skills',
+      path: 'skills-section',
+      activeKey: MenuList.SKILLS,
     },
   ];
 
