@@ -31,6 +31,7 @@ interface ICardItem {
   title: string;
   description: string;
   tags: string[];
+  link: string;
 }
 
 const projectList: Record<string, any[]> = {
@@ -40,6 +41,7 @@ const projectList: Record<string, any[]> = {
       title: 'CRM for E-commerce',
       description:
         'Redesigned Dashboard, Order detail page, E-commerce setting, Setting, Theme Option, Review page, Shop Category page, Tag page, and Comment page.',
+      link: '#',
       tags: [
         'UX Research',
         'Information Architecture',
@@ -49,13 +51,13 @@ const projectList: Record<string, any[]> = {
         'Prototype',
         'User Testing',
       ],
-
     },
     {
       thumbnail: POSThumbnail,
       title: 'Redesign Point of Sale (POS)',
       description:
         'Redesign Login page, Cashier end page, Kitchen view page, and Create website using Figma to create high fidelity prototype.',
+      link: '#',
       tags: [
         'Visual Design',
         'UX Research',
@@ -68,6 +70,7 @@ const projectList: Record<string, any[]> = {
       title: 'Website design full screen and landing page',
       description:
         'Created Information website and e commerce website and Control User stories/User cases and Responsive layouts with design grids guide.',
+      link: '#',
       tags: [
         'UX Research',
         'Visual Design',
@@ -84,6 +87,7 @@ const projectList: Record<string, any[]> = {
       title: 'E-mail Onboarding',
       description:
         'Created and Control Visuals and present the projects to the team focusing on Intuitive design.',
+      link: '#',
       tags: [
         'UX Research',
         'Visual Design',
@@ -96,6 +100,7 @@ const projectList: Record<string, any[]> = {
       title: 'Honda Web Application',
       description:
         'Designed web application based on Honda key visual for Collect points and redeeming rewards from service usage used on the web application for Line Official Account.',
+      link: '#',
       tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Prototype'],
     },
     // {
@@ -103,6 +108,7 @@ const projectList: Record<string, any[]> = {
     //   title: 'Create a Website Mock up',
     //   description:
     //     'Create and Control Visuals UI mockups. Present the projects to the team that clearly show how sites work and look.',
+    //   link: '#',
     //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     // },
     // {
@@ -110,6 +116,7 @@ const projectList: Record<string, any[]> = {
     //   title: 'The List of Themes Website',
     //   description:
     //     'Design and Suggest a Friendly and end to end Ux Flow to each business requirement.',
+    //   link: '#',
     //   tags: [
     //     'UX Research',
     //     'Visual Design',
@@ -124,6 +131,7 @@ const projectList: Record<string, any[]> = {
     //   title: 'Banner Design',
     //   description:
     //     'Create banners for social media posts including Facebook, Twitter, LINE, Instagram, and other Marketing requirements.',
+    //   link: '#',
     //   tags: ['Graphic Design', 'UXUI'],
     // },
     // {
@@ -131,6 +139,7 @@ const projectList: Record<string, any[]> = {
     //   title: 'Gambol Web Application',
     //   description:
     //     'Design web application based on Gambol key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
+    //   link: '#',
     //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     // },
     // {
@@ -138,6 +147,7 @@ const projectList: Record<string, any[]> = {
     //   title: 'Super Coffee Content and Web Application',
     //   description:
     //     'Design web application for collect points and redeem rewards from sending the customer receipt.',
+    //   link: '#',
     //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     // },
     // {
@@ -145,6 +155,7 @@ const projectList: Record<string, any[]> = {
     //   title: 'Dna Web Application',
     //   description:
     //     'Design web application based on Dna key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
+    //   link: '#',
     //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
     // },
   ],
@@ -153,6 +164,7 @@ const projectList: Record<string, any[]> = {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: [
         'UX Research',
         'User Interview',
@@ -165,30 +177,35 @@ const projectList: Record<string, any[]> = {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -197,24 +214,28 @@ const projectList: Record<string, any[]> = {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -223,18 +244,21 @@ const projectList: Record<string, any[]> = {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
     {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -243,6 +267,7 @@ const projectList: Record<string, any[]> = {
       thumbnail: projectThumbnail,
       title: 'Project Title',
       description: '',
+      link: '#',
       tags: ['Mobile App', 'Website', 'SasS'],
     },
   ],
@@ -294,7 +319,7 @@ export const ProjectList = () => {
   };
 
   const renderCardItem = (card: ICardItem) => (
-    <Card>
+    <Card onClick={() => console.log(card.link)}>
       <ProjectThumbnail src={card.thumbnail} alt="project thumbnail" />
       <ProjectTitle>{card.title}</ProjectTitle>
       <ProjectDescription>

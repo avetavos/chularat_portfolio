@@ -57,7 +57,7 @@ export const Certification = () => {
         <div>
           <SectionTitle>Certification</SectionTitle>
         </div>
-        <Carousel showStatus={false} autoPlay={true} infiniteLoop={true}>
+        <Carousel showStatus={false} autoPlay={true} infiniteLoop={true} showThumbs={false}>
           {certList.map((cert, index) => (
             <CertificateWrapper key={index}>
               <CertificateImage src={cert.img} />

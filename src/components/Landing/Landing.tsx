@@ -37,6 +37,7 @@ export const Landing = () => {
             Discover my works
             <Icon
               icon={faArrowDown}
+              size={'sm'}
               style={{
                 margin: '0 0 0 7px',
               }}

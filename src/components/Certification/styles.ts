@@ -92,20 +92,19 @@ export const CertificateDetails = styled.div`
     lg:px-10
     lg:[max-width: 40vw]
   `}
+  font-weight: 200;
 `
 
 export const CertificateTitle = styled.h1`
   ${tw`
     text-2xl
     lg:text-3xl
-    font-bold
   `} 
+  font-weight: 600;
 `
 
 export const CertificateDate = styled.p`
-  ${tw`
-    font-bold
-  `}
+  font-weight: 400;
   font-size: 1rem;
 `
 

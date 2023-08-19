@@ -111,6 +111,7 @@ export const SkillCounter = styled.h1`
     m-0
     text-xl
   `}
+  font-weight: 600;
 `;
 
 export const SkillTitle = styled.h1`
@@ -119,6 +120,7 @@ export const SkillTitle = styled.h1`
     mt-0
     mb-3
   `}
+  font-weight: 600;
 `;
 
 export const SkillDetailsContainer = styled.div`
@@ -144,6 +146,7 @@ export const Tag = styled.p`
     text-black
     m-0
   `}
+  font-weight: 400;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.5);
 `;

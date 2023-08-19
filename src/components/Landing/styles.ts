@@ -49,10 +49,11 @@ export const Content = styled.div`
     flex-1
     w-full
     h-full
+    p-12
     items-start
     overflow-x-hidden
     md:basis-3/5
-    lg:basis-1/2
+    lg:basis-8/12
   `}
 `;
 
@@ -66,6 +67,7 @@ export const Title = styled.h2`
     mt-0
     mb-5
   `}
+  font-size: 2rem;
   font-weight: 400;
 `;
 
@@ -76,6 +78,7 @@ export const NameTitle = styled.h1`
     mt-0
     mb-0
   `}
+  font-size: 3rem;
   font-weight: bolder;
 `;
 
@@ -96,13 +99,13 @@ export const Subtitle = styled.h3`
     lg:text-sm
     xl:text-xl
   `}
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.5rem;
   font-size: 1rem;
 `;
 
 export const TextBold = styled.span`
-  font-weight: 800 !important;
+  font-weight: 600 !important;
 `;
 
 export const BtnContainer = styled.div`
@@ -111,9 +114,10 @@ export const BtnContainer = styled.div`
     flex
     flex-row
     w-full
-    mt-10
-    lg:space-x-10
-    md:space-x-5
+    md:mt-10
+    mt-7
+    lg:space-x-4
+    md:space-x-2
   `}
 `;
 
@@ -122,21 +126,18 @@ export const DownloadResumeBtn = styled.a`
     text-center
     flex-1
     text-white
-    px-2
-    py-3
-    xl:px-6
-    xl:py-4
-    lg:px-3
-    lg:py-3
     cursor-pointer
+    p-2
+    md:[font-size: 1rem;]
   `}
+  font-size: 0.75rem;
   background: #2A2A2A;
-  font-size: 1rem;
-  border-radius: 12px;
-  border: 2px solid #2A2A2A;
+  border-radius: 60px;
+  max-width: 220px;
   &:hover {
-    background-color: #ededed;
-    color: #2A2A2A;
+    background-color: #4F4F4F;
+    color: #FFFFFF;
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.12);
   }
 `;
 
@@ -144,23 +145,18 @@ export const DiscoveryBtn = styled.a`
   ${tw`
     text-center
     flex-1
-    px-2
-    py-3
-    xl:px-6
-    xl:py-4
-    lg:px-3
-    lg:py-3
     cursor-pointer
     text-black
-    hover:decoration-solid
+    p-2
+    md:[font-size: 1rem;]
   `}
-  font-size: 1rem;
-  border-radius: 12px;
+  max-width: 220px;
+  font-size: 0.75rem;
+  border-radius: 60px;
   text-decoration: none;
   &:hover {
-    background-color: #2A2A2A;
-    border: 2px solid #2A2A2A;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.12);
   }
 `;
 
@@ -186,7 +182,8 @@ export const ContentProfileImage = styled(Content)`
   ${tw`
     items-center
     md:py-0
+    py-1
     md:basis-2/5
-    lg:basis-1/2
+    lg:basis-4/12
   `}
 `

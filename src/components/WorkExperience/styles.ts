@@ -124,16 +124,14 @@ export const TimelineItem = styled.li`
 
 export const TimelineTitle = styled.div`
   ${tw`
-    font-bold
     mb-2
   `}
   font-size: 1rem;
+  font-weight: 800;
 `
 
 export const TimelineSubtitle = styled.a`
-  ${tw`
-    font-bold
-  `}
+  font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
   color: rgb(51, 65, 85);
@@ -148,13 +146,14 @@ export const TimelineTimestamp = styled.div`
     md:[left: -11.5em]
     md:[font-size: 1rem]
     top-0
-    font-bold
     last:[top: 100%]
   `}
+  font-weight: 200;
 `
 
 export const TimelineDescription = styled.div`
   ${tw`
     mt-2
   `}
+  font-weight: 200;
 `

@@ -200,6 +200,9 @@ export const Card = styled.div`
   `}
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 22px;
+  &:hover {
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.12);
+  }
 `;
 
 export const ProjectThumbnail = styled.img`
@@ -216,7 +219,7 @@ export const ProjectTitle = styled.h3`
     text-black
   `}
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
 `;
 
 export const ProjectDescription = styled.p`
@@ -225,6 +228,7 @@ export const ProjectDescription = styled.p`
   `}
   font-size: 1rem;
   color: #334155;
+  font-weight: 200;
 `;
 
 export const TagSection = styled.div`
@@ -245,7 +249,7 @@ export const ProjectTag = styled.p`
   font-size: 0.675rem;
   border-radius: 6px;
   background-color: #F1F1F1;
-  font-weight: 800;
+  font-weight: 400;
 `;
 
 export const ViewMoreButton = styled.a`

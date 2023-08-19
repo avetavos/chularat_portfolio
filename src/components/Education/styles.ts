@@ -77,6 +77,7 @@ export const EducationTitle = styled.h1`
     lg:[font-size:2rem]
   `}
   font-size: 1.5rem;
+  font-weight: 400;
 `;
 
 export const EducationInstitute = styled.h2`
@@ -85,13 +86,12 @@ export const EducationInstitute = styled.h2`
     lg:[font-size:1.75rem]
   `}
   font-size: 1.25rem;
+  font-weight: 400;
 `;
 
 export const EducationDuration = styled.h4`
-  ${tw`
-    mb-0
-  `}
   font-size: 1rem;
+  font-weight: 200;
 `;
 
 export const DownloadTranscriptBtn = styled.a`
@@ -99,17 +99,18 @@ export const DownloadTranscriptBtn = styled.a`
     text-center
     flex-1
     text-white
-    px-2
-    py-3
-    mt-5
-    xl:px-6
-    xl:py-4
-    lg:px-3
-    lg:py-3
     cursor-pointer
+    p-3
+    md:[font-size: 1rem;]
   `}
+  font-size: 0.75rem;
   background: #2A2A2A;
+  border-radius: 60px;
+  min-width: 180px;
   text-decoration: none;
-  font-size: 1rem;
-  border-radius: 12px;
+  &:hover {
+    background-color: #4F4F4F;
+    color: #FFFFFF;
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.12);
+  }
 `;
