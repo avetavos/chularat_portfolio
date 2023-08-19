@@ -19,6 +19,12 @@ import {
 import projectThumbnail from '../../assets/project-thumbnail.jpg';
 import { isMobile, isTablet } from 'react-device-detect';
 import { Element } from 'react-scroll';
+import CMSThumbnail from '../../assets/projects/cms.png';
+import POSThumbnail from '../../assets/projects/pos.png';
+import WebsiteThumbnail from '../../assets/projects/website.png';
+import EmailThumbnail from '../../assets/projects/email.png';
+import HondaThumbnail from '../../assets/projects/honda.png';
+import ECommerceThumbnail from '../../assets/projects/ecommerce.png';
 
 interface ICardItem {
   thumbnail: string;
@@ -30,7 +36,7 @@ interface ICardItem {
 const projectList: Record<string, any[]> = {
   uxui: [
     {
-      thumbnail: projectThumbnail,
+      thumbnail: CMSThumbnail,
       title: 'CRM for E-commerce',
       description:
         'Redesigned Dashboard, Order detail page, E-commerce setting, Setting, Theme Option, Review page, Shop Category page, Tag page, and Comment page.',
@@ -43,9 +49,10 @@ const projectList: Record<string, any[]> = {
         'Prototype',
         'User Testing',
       ],
+
     },
     {
-      thumbnail: projectThumbnail,
+      thumbnail: POSThumbnail,
       title: 'Redesign Point of Sale (POS)',
       description:
         'Redesign Login page, Cashier end page, Kitchen view page, and Create website using Figma to create high fidelity prototype.',
@@ -57,7 +64,7 @@ const projectList: Record<string, any[]> = {
       ],
     },
     {
-      thumbnail: projectThumbnail,
+      thumbnail: WebsiteThumbnail,
       title: 'Website design full screen and landing page',
       description:
         'Created Information website and e commerce website and Control User stories/User cases and Responsive layouts with design grids guide.',
@@ -73,7 +80,7 @@ const projectList: Record<string, any[]> = {
       ],
     },
     {
-      thumbnail: projectThumbnail,
+      thumbnail: EmailThumbnail,
       title: 'E-mail Onboarding',
       description:
         'Created and Control Visuals and present the projects to the team focusing on Intuitive design.',
@@ -85,61 +92,61 @@ const projectList: Record<string, any[]> = {
       ],
     },
     {
-      thumbnail: projectThumbnail,
+      thumbnail: HondaThumbnail,
       title: 'Honda Web Application',
       description:
         'Designed web application based on Honda key visual for Collect points and redeeming rewards from service usage used on the web application for Line Official Account.',
       tags: ['UX Research', 'Visual Design', 'Customer Journey', 'Prototype'],
     },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Create a Website Mock up',
-      description:
-        'Create and Control Visuals UI mockups. Present the projects to the team that clearly show how sites work and look.',
-      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'The List of Themes Website',
-      description:
-        'Design and Suggest a Friendly and end to end Ux Flow to each business requirement.',
-      tags: [
-        'UX Research',
-        'Visual Design',
-        'Story Telling',
-        'Copy Writing',
-        'Prototype',
-        'Customer Journey',
-      ],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Banner Design',
-      description:
-        'Create banners for social media posts including Facebook, Twitter, LINE, Instagram, and other Marketing requirements.',
-      tags: ['Graphic Design', 'UXUI'],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Gambol Web Application',
-      description:
-        'Design web application based on Gambol key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
-      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Super Coffee Content and Web Application',
-      description:
-        'Design web application for collect points and redeem rewards from sending the customer receipt.',
-      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
-    },
-    {
-      thumbnail: projectThumbnail,
-      title: 'Dna Web Application',
-      description:
-        'Design web application based on Dna key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
-      tags: ['Graphic Design', 'UXUI', 'Concept Art'],
-    },
+    // {
+    //   thumbnail: projectThumbnail,
+    //   title: 'Create a Website Mock up',
+    //   description:
+    //     'Create and Control Visuals UI mockups. Present the projects to the team that clearly show how sites work and look.',
+    //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
+    // },
+    // {
+    //   thumbnail: projectThumbnail,
+    //   title: 'The List of Themes Website',
+    //   description:
+    //     'Design and Suggest a Friendly and end to end Ux Flow to each business requirement.',
+    //   tags: [
+    //     'UX Research',
+    //     'Visual Design',
+    //     'Story Telling',
+    //     'Copy Writing',
+    //     'Prototype',
+    //     'Customer Journey',
+    //   ],
+    // },
+    // {
+    //   thumbnail: projectThumbnail,
+    //   title: 'Banner Design',
+    //   description:
+    //     'Create banners for social media posts including Facebook, Twitter, LINE, Instagram, and other Marketing requirements.',
+    //   tags: ['Graphic Design', 'UXUI'],
+    // },
+    // {
+    //   thumbnail: projectThumbnail,
+    //   title: 'Gambol Web Application',
+    //   description:
+    //     'Design web application based on Gambol key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
+    //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
+    // },
+    // {
+    //   thumbnail: projectThumbnail,
+    //   title: 'Super Coffee Content and Web Application',
+    //   description:
+    //     'Design web application for collect points and redeem rewards from sending the customer receipt.',
+    //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
+    // },
+    // {
+    //   thumbnail: projectThumbnail,
+    //   title: 'Dna Web Application',
+    //   description:
+    //     'Design web application based on Dna key visual for Collect points and redeeming rewards from Submit a receipt used on the web application for Line Official Account.',
+    //   tags: ['Graphic Design', 'UXUI', 'Concept Art'],
+    // },
   ],
   design: [
     {
@@ -327,7 +334,7 @@ export const ProjectList = () => {
         <div>
           <SectionTitle>Portfolio</SectionTitle>
         </div>
-        <TabContainer>
+        {/* <TabContainer>
           <TabList>
             <Tab
               className={`${selectedTab === 'uxui' ? 'active' : ''}`}
@@ -360,7 +367,7 @@ export const ProjectList = () => {
               Drawing<PowerNumber>{projectCount['drawing']}</PowerNumber>
             </Tab>
           </TabList>
-        </TabContainer>
+        </TabContainer> */}
         <>
           <CardContainer isDesktop={true}>
             {renderCardListOnDesktop(projectList[selectedTab])}

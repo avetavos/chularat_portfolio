@@ -133,6 +133,11 @@ export const DownloadResumeBtn = styled.a`
   background: #2A2A2A;
   font-size: 1rem;
   border-radius: 12px;
+  border: 2px solid #2A2A2A;
+  &:hover {
+    background-color: #ededed;
+    color: #2A2A2A;
+  }
 `;
 
 export const DiscoveryBtn = styled.a`
@@ -152,6 +157,11 @@ export const DiscoveryBtn = styled.a`
   font-size: 1rem;
   border-radius: 12px;
   text-decoration: none;
+  &:hover {
+    background-color: #2A2A2A;
+    border: 2px solid #2A2A2A;
+    color: #fff;
+  }
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
